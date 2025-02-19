@@ -1,0 +1,735 @@
+IQ-TREE 2.3.6 built Dec 11 2024
+
+Input file name: ITS_mafft.fasta
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (10000 replicates)
+Random seed number: 884530
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 131 sequences with 1320 nucleotide sites
+Number of constant sites: 541 (= 40.9848% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 541 (= 40.9848% of all sites)
+Number of parsimony informative sites: 596
+Number of distinct site patterns: 1001
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: TN+F+I+G4
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+TN+F+I+G4        -15916.445   32364.890 -  6.2e-06   32499.785 - 0.000115   33744.203 +    0.308
+TIM2+F+I+G4      -15913.296   32360.592 - 5.32e-05   32496.630 - 0.000555   33745.090 +    0.197
+TN+F+R4          -15902.569   32345.138 +    0.121   32484.642 +    0.222   33745.192 +    0.188
+TIM3e+I+G4       -15924.906   32377.812 - 9.69e-09   32510.437 - 5.57e-07   33746.754 +   0.0859
+TIM2+F+R4        -15900.063   32342.127 +    0.544   32482.798 +    0.559   33747.367 +   0.0632
+TNe+I+G4         -15929.107   32384.214 - 3.94e-10   32515.714 - 3.98e-08   33747.971 -   0.0467
+TIM3+F+I+G4      -15914.882   32363.764 - 1.09e-05   32499.802 - 0.000114   33748.262 -   0.0404
+TNe+R4           -15915.569   32365.138 - 5.47e-06   32501.176 - 5.71e-05   33749.637 -   0.0203
+TIM3e+R4         -15912.073   32360.145 - 6.65e-05   32497.332 -  0.00039   33749.829 -   0.0185
+TIM3+F+R4        -15901.549   32345.097 +    0.123   32485.769 +    0.127   33750.337 -   0.0143
+TIM+F+I+G4       -15916.430   32366.861 - 2.31e-06   32502.899 - 2.41e-05   33751.359 -  0.00859
+TIM+F+R4         -15902.685   32347.370 -   0.0395   32488.041 -   0.0406   33752.610 -   0.0046
+TIMe+I+G4        -15928.918   32385.835 - 1.75e-10   32518.461 - 1.01e-08   33754.778 -  0.00155
+TIM2e+I+G4       -15929.087   32386.174 - 1.48e-10   32518.800 - 8.51e-09   33755.117 -  0.00131
+GTR+F+I+G4       -15911.654   32361.309 - 3.71e-05   32499.652 - 0.000122   33756.178 - 0.000772
+TIMe+R4          -15915.436   32366.871 -  2.3e-06   32504.059 - 1.35e-05   33756.555 - 0.000639
+TIM2e+R4         -15915.701   32367.402 - 1.77e-06   32504.589 - 1.04e-05   33757.085 -  0.00049
+GTR+F+R4         -15899.362   32344.724 +    0.148   32487.749 -    0.047   33760.335 - 9.66e-05
+SYM+I+G4         -15924.756   32381.512 - 1.52e-09   32516.407 - 2.82e-08   33760.825 - 7.56e-05
+SYM+R4           -15912.242   32364.483 -  7.6e-06   32503.988 -  1.4e-05   33764.538 - 1.18e-05
+GTR+F+I+R3       -15908.281   32360.561 -  5.4e-05   32502.406 - 3.09e-05   33770.986 -  4.7e-07
+GTR+F+I+R4       -15901.732   32351.464 -   0.0051   32495.674 - 0.000894   33772.260 - 2.49e-07
+GTR+F+R5         -15899.390   32348.780 -   0.0195   32494.182 -  0.00189   33774.761 - 7.12e-08
+HKY+F+R4         -15921.695   32381.389 - 1.62e-09   32519.732 - 5.34e-09   33776.258 - 3.37e-08
+HKY+F+I+G4       -15936.481   32402.962 - 3.35e-14   32536.719 - 1.09e-12   33777.090 - 2.22e-08
+TPM2u+F+I+G4     -15932.895   32397.790 - 4.45e-13   32532.685 - 8.22e-12   33777.103 - 2.21e-08
+TPM2u+F+R4       -15918.784   32377.567 -  1.1e-08   32517.072 - 2.02e-08   33777.622 -  1.7e-08
+TPM3u+F+I+G4     -15934.878   32401.757 - 6.12e-14   32536.652 - 1.13e-12   33781.070 - 3.04e-09
+TPM3u+F+R4       -15920.520   32381.040 - 1.93e-09   32520.544 - 3.56e-09   33781.094 -    3e-09
+K3Pu+F+R4        -15921.674   32383.348 - 6.08e-10   32522.852 - 1.12e-09   33783.402 - 9.46e-10
+K3Pu+F+I+G4      -15936.431   32404.862 -  1.3e-14   32539.756 - 2.39e-13   33784.175 - 6.43e-10
+TVM+F+I+G4       -15931.293   32398.587 - 2.99e-13   32535.774 - 1.75e-12   33788.270 -  8.3e-11
+TVM+F+R4         -15917.910   32379.820 - 3.55e-09   32521.666 - 2.03e-09   33790.246 - 3.09e-11
+GTR+F+R3         -15924.623   32391.246 - 1.17e-11   32531.918 - 1.21e-11   33796.486 - 1.36e-12
+GTR+F+G4         -15936.396   32408.791 - 1.82e-15   32545.979 - 1.07e-14   33798.475 - 5.05e-13
+K2P+R4           -15972.575   32477.151 -  2.6e-30   32612.045 - 4.81e-29   33856.464 - 1.29e-25
+TPM3+R4          -15969.274   32472.548 -  2.6e-29   32608.586 - 2.71e-28   33857.046 - 9.65e-26
+TPM3+I+G4        -15983.947   32493.893 - 6.02e-34   32625.393 - 6.07e-32   33857.650 - 7.13e-26
+K2P+I+G4         -15988.002   32500.003 - 2.84e-35   32630.384 - 5.01e-33   33858.575 - 4.49e-26
+K3P+R4           -15972.381   32478.763 - 1.16e-30   32614.801 - 1.21e-29   33863.261 - 4.31e-27
+TPM2+R4          -15972.644   32479.289 - 8.93e-31   32615.327 - 9.32e-30   33863.787 - 3.32e-27
+K3P+I+G4         -15987.792   32501.583 - 1.29e-35   32633.083 -  1.3e-33   33865.340 - 1.53e-27
+TPM2+I+G4        -15987.962   32501.923 - 1.09e-35   32633.423 -  1.1e-33   33865.680 - 1.29e-27
+GTR+F+I+R2       -15964.174   32468.349 - 2.12e-28   32607.853 - 3.91e-28   33868.403 -  3.3e-28
+TVMe+I+G4        -15983.772   32497.545 -  9.7e-35   32631.302 - 3.17e-33   33871.672 - 6.43e-29
+TVMe+R4          -15969.406   32476.812 - 3.08e-30   32615.155 - 1.02e-29   33871.681 -  6.4e-29
+GTR+F+R2         -16024.200   32586.400 - 4.92e-54   32724.743 - 1.62e-53   33981.269 - 1.02e-52
+F81+F+R4         -16276.689   33089.378 - 2.96e-163   33226.566 - 1.74e-162   34479.062 - 8.23e-161
+F81+F+I+G4       -16294.797   33117.593 - 2.21e-169   33250.219 - 1.27e-167   34486.536 - 1.96e-162
+JC+R4            -16362.892   33255.784 - 2.17e-199   33389.541 - 7.09e-198   34629.912 - 1.44e-193
+JC+I+G4          -16381.776   33285.551 - 7.47e-206   33414.818 - 2.3e-203   34638.937 - 1.58e-195
+GTR+F+I          -16457.571   33451.143 - 8.23e-242   33588.330 - 4.83e-241   34840.827 - 2.29e-239
+GTR+F            -17296.163   35126.326 -        0   35262.364 -        0   36510.824 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: TN+F+I+G4
+
+Rate parameter R:
+
+  A-C: 1.0000
+  A-G: 2.3269
+  A-T: 1.0000
+  C-G: 1.0000
+  C-T: 3.6426
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.2104
+  pi(C) = 0.2898
+  pi(G) = 0.2397
+  pi(T) = 0.2601
+
+Rate matrix Q:
+
+  A   -0.8661    0.2266    0.4361    0.2034
+  C    0.1645    -1.093    0.1874    0.7409
+  G    0.3829    0.2266   -0.8129    0.2034
+  T    0.1645    0.8254    0.1874    -1.177
+
+Model of rate heterogeneity: Invar+Gamma with 4 categories
+Proportion of invariable sites: 0.1898
+Gamma shape alpha: 0.9012
+
+ Category  Relative_rate  Proportion
+  0         0              0.1898
+  1         0.1442         0.2026
+  2         0.5491         0.2026
+  3         1.211          0.2026
+  4         3.032          0.2026
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -15892.9042 (s.e. 491.8821)
+Unconstrained log-likelihood (without tree): -8697.6667
+Number of free parameters (#branches + #model parameters): 266
+Akaike information criterion (AIC) score: 32317.8084
+Corrected Akaike information criterion (AICc) score: 32452.7030
+Bayesian information criterion (BIC) score: 33697.1214
+
+Total tree length (sum of branch lengths): 9.0775
+Sum of internal branch lengths: 5.0570 (55.7098% of tree length)
+
+WARNING: 26 near-zero internal branches (<0.0008) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'V_variicystidiosa_LAH37570' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++**V_variicystidiosa_LAH37570
+|
++**V_variicystidiosa_LAH37568
+|
+|                                                           +**V_caesiotincta_Orton3805_United_Kingdom
+|                                                        +**| (72)
+|                                                        |  |     +**V_caesiotincta_FG0110202213_ltaly_FG0110202213
+|                                                        |  |  +**| (67)
+|                                                        |  |  |  +--V_caesiotincta_OKATR278_Turkey_OKATR278
+|                                                        |  +--| (82)
+|                                                        |     +**V_caesiotincta_BRNM792940_Czech_Republic
+|                                                 +------| (100)
+|                                                 |      +**V_caesiotincta_SFC171118_Spain_SFC171118
+|                                              +--| (76)
+|                                              |  +-----V_mediterranea_AH56333_TYPE_Spain_AH56333_TYPE
+|                                           +--| (48)
+|                                           |  |        +**V_clavocystidiata_LE_313639_TYPE_Russia_LE_313639_TYPE
+|                                           |  +--------| (100)
+|                                           |           +**V_clavocystidiata_GF02082021009_Slovenia_GF02082021009
+|                                        +--| (60)
+|                                        |  |  +------------V_thailandensis_SDBR_CMUNK0957_TYPE_Thailand_SDBR_CMUNK0957_TYPE
+|                                        |  +--| (81)
+|                                        |     |      +**V_pilosipilea_CR3_Spain_CR3
+|                                        |     |   +--| (100)
+|                                        |     |   |  +**V_pilosipilea_AH60256_TYPE_Spain_AH60256_TYPE
+|                                        |     +---| (100)
+|                                        |         +---V_nodosicystis_AH60257_TYPE_Spain_AH60257_TYPE
+|                                     +--| (44)
+|                                     |  |        +--V_taylorii_AJ54_Portugal_AJ54
+|                                     |  |     +--| (100)
+|                                     |  |     |  |  +**V_taylorii_OKATR2478_Turkey_OKATR2478
+|                                     |  |     |  +--| (100)
+|                                     |  |     |     +**V_taylorii_AMB18874_Italy_AMB18874
+|                                     |  |  +--| (99)
+|                                     |  |  |  +-----V_globifera_ARAN_Fungi_09431_TYPE_Spain_ARAN_Fungi_09431_TYPE
+|                                     |  +--| (35)
+|                                     |     |        +**V_murinella_GLM_F43392_Germany_GLM_F43392
+|                                     |     |     +**| (67)
+|                                     |     |     |  +--V_neoparvula_GDOR_5558_TYPE_Italy_GDOR_5558_TYPE
+|                                     |     |  +--| (99)
+|                                     |     |  |  +**V_murinella_GLM_F42624_Germany_GLM_F42624
+|                                     |     +--| (35)
+|                                     |        |     +**V_cryptica_AH60258_TYPE_Spain_AH60258_TYPE
+|                                     |        |  +--| (100)
+|                                     |        |  |  +**V_cryptica_SFC190922_Spain_SFC190922
+|                                     |        +--| (29)
+|                                     |           +-------------------V_ranulicystis_AH60253_TYPE_Spain_AH60253_TYPE
+|                                  +--| (58)
+|                                  |  |                    +**V_glaucocephala_AH60251_TYPE_Spain_AH60251_TYPE
+|                                  |  |                 +**| (58)
+|                                  |  |                 |  +**V_glaucocephala_LOU18924_Spain_LOU18924
+|                                  |  |              +--| (96)
+|                                  |  |              |  +**V_glaucocephala_LAP189_Spain_LAP189
+|                                  |  |           +--| (84)
+|                                  |  |           |  |        +--V_hypopithys_KM257372_United_Kingdom_KM257372
+|                                  |  |           |  |     +--| (66)
+|                                  |  |           |  |     |  +--V_hypopithys_HKAS133864_China_Yunnan_HKAS133864
+|                                  |  |           |  |  +**| (38)
+|                                  |  |           |  |  |  +**V_hypopithys_EB01092020_Italy_EB01092020
+|                                  |  |           |  +--| (68)
+|                                  |  |           |     +--V_hypopithys_oka341_Denmark_oka341
+|                                  |  |        +--| (96)
+|                                  |  |        |  |       +**V_reidii_DK_personal_collection_Denmark_DK_personal_collection
+|                                  |  |        |  |    +**| (52)
+|                                  |  |        |  |    |  +**V_reidii_ARAN_Fungi_01678_Spain_ARAN_Fungi_01678
+|                                  |  |        |  +----| (100)
+|                                  |  |        |       +--V_reidii_UCS_6950_3423_Finland_UCS_6950_3423
+|                                  |  |     +--| (98)
+|                                  |  |     |  |     +**V_strangulata_TOAV141_Italy_TOAV141
+|                                  |  |     |  |  +--| (100)
+|                                  |  |     |  |  |  +**V_strangulata_AH44413_Spain_AH44413
+|                                  |  |     |  +--| (99)
+|                                  |  |     |     |     +**V_surrecta_AJ55_Spain_AJ55
+|                                  |  |     |     |  +--| (100)
+|                                  |  |     |     |  |  +**V_surrecta_SFC081108_Spain_SFC081108
+|                                  |  |     |     +--| (100)
+|                                  |  |     |        +**V_surrecta_GLM_F61563_Germany_GLM_F61563
+|                                  |  |  +--| (94)
+|                                  |  |  |  |  +--V_terrea_LUG11010_France_LUG11010
+|                                  |  |  |  +--| (100)
+|                                  |  |  |     |  +**V_terrea_KM195631_UnitedKingdom_KM195631
+|                                  |  |  |     +**| (61)
+|                                  |  |  |        +**V_terrea_RCA08122022_Italy_RCA08122022
+|                                  |  +--| (57)
+|                                  |     |              +**V_dunensis_RFS07031003_Spain_RFS07031003
+|                                  |     |           +**| (61)
+|                                  |     |           |  +**V_dunensis_JAC10587_NewZealand_JAC10587
+|                                  |     |        +--| (99)
+|                                  |     |        |  +**V_dunensis_SCM3513_Spain_SCM3513
+|                                  |     |     +--| (99)
+|                                  |     |     |  +--V_paludosa_LE313556_TYPE_Russia_LE313556_TYPE
+|                                  |     |  +--| (99)
+|                                  |     |  |  |  +--V_murinella_OKA_TR2473_Turkey_OKA_TR2473
+|                                  |     |  |  +--| (100)
+|                                  |     |  |     +**V_murinella_AMB19318_Italy_AMB19318
+|                                  |     +--| (98)
+|                                  |        |       +--V_deceptiva_AMB19290_TYPE_Italy_AMB19290_TYPE
+|                                  |        |    +--| (100)
+|                                  |        |    |  |  +**V_graminicola_KM68813_Spain_KM68813
+|                                  |        |    |  +--| (100)
+|                                  |        |    |     +**V_graminicola_AH60252_TYPE_Spain_AH60252_TYPE
+|                                  |        +----| (100)
+|                                  |             |  +--V_pusilla_SFC190908_Spain_SFC190908
+|                                  |             +--| (100)
+|                                  |                +**V_pusilla_BRNM817662_CzechRepublic_BRNM817662
+|                               +--| (65)
+|                               |  +--------V_latispora_AH49362_TYPE_Spain_AH49362_TYPE
+|                            +--| (83)
+|                            |  |                     +--V_nivea_GDGM25489_TYPE_China_Guangdong_GDGM25489_TYPE
+|                            |  |                  +**| (43)
+|                            |  |                  |  +**V_nivea_HKAS77616_China_Guangdong_HKAS77616
+|                            |  |               +**| (43)
+|                            |  |               |  +--V_nivea_HKAS99697_China_Hainan_HKAS99697
+|                            |  |            +--| (100)
+|                            |  |            |  |  +--V_nivea_HKAS78185_China_Guangdong_HKAS78185
+|                            |  |            |  +--| (89)
+|                            |  |            |     |  +**V_nivea_HKAS78190_China_Guangdong_HKAS78190
+|                            |  |            |     +--| (96)
+|                            |  |            |        +--V_nivea_HKAS79630_China_Guangdong_HKAS79630
+|                            |  |       +----| (100)
+|                            |  |       |    |  +**V_rostricystidiata_MFLU19_1528_TYPE_Thailand_MFLU19_1528_TYPE
+|                            |  |       |    +--| (100)
+|                            |  |       |       +**V_rostricystidiata_MFLU19_1531_Thailand_MFLU19_1531
+|                            |  |  +----| (97)
+|                            |  |  |    +-----------V_rava_GDGM41955_TYPE_China_Guangdong_GDGM41955_TYPE
+|                            |  +--| (71)
+|                            |     +------------V_turcica_OKA_TR17_TYPE_Turkey_OKA_TR17_TYPE
+|                         +--| (36)
+|                         |  |         +----V_sathei_AMH9436_TYPE_India_AMH9436_TYPE
+|                         |  +---------| (100)
+|                         |            |  +**V_neovolvacea_SDBR_CMUNK0758_TYPE_Thailand_SDBR_CMUNK0758_TYPE
+|                         |            +--| (100)
+|                         |               +**V_neovolvacea_SDBR_CMUNK0760_Thailand_SDBR_CMUNK0760
+|                      +--| (84)
+|                      |  |                                             +**V_volvacea_G00295827_France_G00295827
+|                      |  |                                          +**| (71)
+|                      |  |                                          |  +--V_volvacea_HKAS123153_SriLanka_HKAS123153
+|                      |  |                                       +**| (67)
+|                      |  |                                       |  +**V_volvacea_ZJ0001GBJ01_China_ZJ0001GBJ01
+|                      |  |                                    +**| (23)
+|                      |  |                                    |  +--V_volvacea_TNSF51910_Japan_TNSF51910
+|                      |  |                                 +**| (26)
+|                      |  |                                 |  +**V_volvacea_HKAS126966_China_Sichuan_HKAS126966
+|                      |  |                              +**| (23)
+|                      |  |                              |  +**V_volvacea_JAC12235_NewZealand_JAC12235
+|                      |  |                           +**| (20)
+|                      |  |                           |  +**V_volvacea_CBS355_64_India_CBS355_64
+|                      |  |                        +**| (9)
+|                      |  |                        |  +**V_volvacea_BKF10217_Thailand_BKF10217
+|                      |  |                     +--| (100)
+|                      |  |                     |  +**V_volvacea_SDBR_CMUNK505_Thailand_SDBR_CMUNK505
+|                      |  |                  +--| (96)
+|                      |  |                  |  |         +**V_bombycina_AJ244_Spain_AJ244
+|                      |  |                  |  |      +**| (44)
+|                      |  |                  |  |      |  |     +--V_bombycina_SDBR_CMUNK0726_Thailand_SDBR_CMUNK0726
+|                      |  |                  |  |      |  |  +--| (85)
+|                      |  |                  |  |      |  |  |  |  +--V_bombycina_HKAS31463_CostaRica_HKAS31463
+|                      |  |                  |  |      |  |  |  +--| (96)
+|                      |  |                  |  |      |  |  |     +**V_bombycina_HKAS57909_China_Xizang_HKAS57909
+|                      |  |                  |  |      |  +**| (34)
+|                      |  |                  |  |      |     +--V_bombycina_ARAN_Fungi_01299_Spain_ARAN_Fungi_01299
+|                      |  |                  |  |   +**| (65)
+|                      |  |                  |  |   |  +--V_bombycina_HKAS105371_China_Jilin_HKAS105371
+|                      |  |                  |  +---| (100)
+|                      |  |                  |      +--V_bombycina_xj2018071604_China_xj2018071604
+|                      |  |           +------| (100)
+|                      |  |           |      |  +**V_orientalis_LE313241_Vietnam_LE313241
+|                      |  |           |      +--| (100)
+|                      |  |           |         +**V_orientalis_LEF313654_TYPE_Vietnam
+|                      |  |     +-----| (100)
+|                      |  |     |     |                                +--Vp_earlei_TOAV134_Italy_TOAV134
+|                      |  |     |     |                             +--| (74)
+|                      |  |     |     |                             |  +--Vp_earlei_HKAS133863_China_Yunnan_HKAS133863
+|                      |  |     |     |                          +--| (73)
+|                      |  |     |     |                          |  +**Vp_earlei_MDBar_rettF86_11_Australia_MDBar_rettF86_11
+|                      |  |     |     |                      +---| (100)
+|                      |  |     |     |                      |   +**Vp_earlei_MDBarrettF14_10_Australia_MDBarrettF14_10
+|                      |  |     |     |                   +--| (98)
+|                      |  |     |     |                   |  |            +**Vp_gloiocephalus_HKAS82836_China_Yunnan_HKAS82836
+|                      |  |     |     |                   |  |         +**| (55)
+|                      |  |     |     |                   |  |         |  +--Vp_gloiocephalus_HKAS71087_China_Yunnan_HKAS71087
+|                      |  |     |     |                   |  |      +--| (93)
+|                      |  |     |     |                   |  |      |  |  +**Vp_gloiocephalus_HKAS127781_China_Yunnan_HKAS127781
+|                      |  |     |     |                   |  |      |  +**| (57)
+|                      |  |     |     |                   |  |      |     |  +--Vp_gloiocephalus_HKAS133862_China_Shanxi_HKAS133862
+|                      |  |     |     |                   |  |      |     +**| (45)
+|                      |  |     |     |                   |  |      |        +**Vp_gloiocephalus_HKAS82935_China_Xizang_HKAS82935
+|                      |  |     |     |                   |  +------| (100)
+|                      |  |     |     |                   |         +--Vp_gloiocephalus_HKAS90369_China_Xizang_HKAS90369
+|                      |  |     |     +-------------------| (100)
+|                      |  |     |                         |     +**Vp_michiganensis_MICH11761_TYPE_USA_MICH11761_TYPE
+|                      |  |     |                         |  +--| (100)
+|                      |  |     |                         |  |  +--Vp_michiganensis_HMJAUCR106_China_HMJAUCR106
+|                      |  |     |                         +--| (100)
+|                      |  |     |                            |  +**Vp_asiaticus_LEF332246_Russia_LEF332246
+|                      |  |     |                            +--| (100)
+|                      |  |     |                               +--Volvopluteus_asiaticus_TNSF15191_TYPE_Japan
+|                      |  +-----| (100)
+|                      |        |        +------------------V_niveosulcata_LE313229_TYPE_Vietnam_LE313229_TYPE
+|                      |        |   +----| (100)
+|                      |        |   |    |  +--V_pulla_LE313325_TYPE_Vietnam_LE313325_TYPE
+|                      |        |   |    +--| (99)
+|                      |        |   |       |  +**V_pulla_MFLU19_1534_Thailand_MFLU19_1534
+|                      |        |   |       +--| (99)
+|                      |        |   |          +--V_pulla_HKAS125711_China_Yunnan_HKAS125711
+|                      |        +---| (97)
+|                      |            |             +**V_bilobata_CUH_AM778_India_CUH_AM778
+|                      |            +-------------| (100)
+|                      |                          +**V_bilobata_GUBH_19922_TYPE_India_GUBH_19922_TYPE
+|                   +--| (64)
+|                   |  +-------V_siquieri_AH602551_TYPE_Spain_AH602551_TYPE
+|                +--| (41)
+|                |  |                +--V_morozovae_LE313322_Vietnam_LE313322
+|                |  |             +**| (74)
+|                |  |             |  |  +--V_morozovae_HKAS125659_China_Yunnan_HKAS125659
+|                |  |             |  +--| (77)
+|                |  |             |     +**V_morozovae_HKAS128675_China_Yunnan_HKAS128675
+|                |  |          +--| (99)
+|                |  |          |  +**V_morozovae_LE313323_TYPE_Vietnam_LE313323_TYPE
+|                |  |       +--| (100)
+|                |  |       |  |  +--V_morozovae_HKAS133866_China_Yunnan_HKAS133866
+|                |  |       |  +--| (99)
+|                |  |       |     +--V_morozovae_HKAS128215_China_Yunnan_HKAS128215
+|                |  |    +--| (97)
+|                |  |    |  |        +--V_rimosa_HKAS133859_China_Yunnan_HKAS133859
+|                |  |    |  |     +**| (83)
+|                |  |    |  |     |  |  +--V_rimosa_HKAS107617_China_Yunnan_HKAS107617
+|                |  |    |  |     |  +--| (100)
+|                |  |    |  |     |     +**V_rimosa_HKAS127812_China_Yunnan_HKAS127812
+|                |  |    |  |  +**| (95)
+|                |  |    |  |  |  +**V_rimosa_HKAS113015_TYPE_China_Yunnan_HKAS113015_TYPE
+|                |  |    |  +--| (97)
+|                |  |    |     +--V_rimosa_HKAS101180_China_Yunnan_HKAS101180
+|                |  +----| (100)
+|                |       |  +--V_sp__ARF4948_USA
+|                |       +--| (99)
+|                |          +--V_sp__JBSD130791_DominicanRepublic
+|             +--| (45)
+|             |  +---V_sylvipraticola_AH59938_TYPE_Spain_AH59938_TYPE
+|          +--| (61)
+|          |  |       +--V_lepiotospora_AJ155_USA_AJ155
+|          |  |   +---| (100)
+|          |  |   |   +**V_lepiotospora_FLASF_61505_USA_FLASF_61505
+|          |  +---| (100)
+|          |      |      +**V_pilosa_HKAS133857_China_Yunann_HKAS133857
+|          |      |   +--| (100)
+|          |      |   |  +**V_pilosa_HKAS133858_TYPE_China_Yunnan_HKAS133858_TYPE
+|          |      +---| (100)
+|          |          |  +--V_parvirimosa_HKAS83879_TYPE_China_Yunnan_HKAS83879_TYPE
+|          |          +--| (100)
+|          |             +--V_parvirimosa_HKAS101368_China_Yunnan_HKAS101368
++----------| (100)
+           |      +--V_ptilotricha_LE313324_TYPE_Vietnam_LE313324_TYPE
+           |   +--| (99)
+           |   |  |  +--V_cordispora_AH60254_TYPE_Spain_AH60254_TYPE
+           |   |  +--| (100)
+           |   |     |  +**V_izmirensis_GUL1027_TYPE_Turkey_GUL1027_TYPE
+           |   |     +--| (100)
+           |   |        +**V_izmirensis_OKA_TR3536_Turkey_OKA_TR3536
+           +---| (100)
+               +--V_subtaylorii_TNSF74537_Japan_TNSF74537
+
+Tree in newick format:
+
+(V_variicystidiosa_LAH37570:0.0000022808,V_variicystidiosa_LAH37568:0.0000009996,((((((((((((((((V_caesiotincta_Orton3805_United_Kingdom:0.0000009996,((V_caesiotincta_FG0110202213_ltaly_FG0110202213:0.0000009996,V_caesiotincta_OKATR278_Turkey_OKATR278:0.0239626000)67:0.0000028566,V_caesiotincta_BRNM792940_Czech_Republic:0.0000009996)82:0.0019026868)72:0.0000023630,V_caesiotincta_SFC171118_Spain_SFC171118:0.0000028366)100:0.1586193426,V_mediterranea_AH56333_TYPE_Spain_AH56333_TYPE:0.1510943945)76:0.0269739701,(V_clavocystidiata_LE_313639_TYPE_Russia_LE_313639_TYPE:0.0000020027,V_clavocystidiata_GF02082021009_Slovenia_GF02082021009:0.0000022226)100:0.2060940501)48:0.0100705354,(V_thailandensis_SDBR_CMUNK0957_TYPE_Thailand_SDBR_CMUNK0957_TYPE:0.2971315504,((V_pilosipilea_CR3_Spain_CR3:0.0000009996,V_pilosipilea_AH60256_TYPE_Spain_AH60256_TYPE:0.0000009996)100:0.0473337699,V_nodosicystis_AH60257_TYPE_Spain_AH60257_TYPE:0.1033668991)100:0.0991652749)81:0.0502891521)60:0.0186875221,(((V_taylorii_AJ54_Portugal_AJ54:0.0050161335,(V_taylorii_OKATR2478_Turkey_OKATR2478:0.0000009996,V_taylorii_AMB18874_Italy_AMB18874:0.0000009996)100:0.0043630059)100:0.0608934052,V_globifera_ARAN_Fungi_09431_TYPE_Spain_ARAN_Fungi_09431_TYPE:0.1412386060)99:0.0349750968,(((V_murinella_GLM_F43392_Germany_GLM_F43392:0.0000009996,V_neoparvula_GDOR_5558_TYPE_Italy_GDOR_5558_TYPE:0.0020914298)67:0.0000021042,V_murinella_GLM_F42624_Germany_GLM_F42624:0.0000009996)99:0.0223480705,((V_cryptica_AH60258_TYPE_Spain_AH60258_TYPE:0.0000009996,V_cryptica_SFC190922_Spain_SFC190922:0.0000009996)100:0.0077565925,V_ranulicystis_AH60253_TYPE_Spain_AH60253_TYPE:0.4381274173)29:0.0204350790)35:0.0423229155)35:0.0399676627)44:0.0255004507,(((((((V_glaucocephala_AH60251_TYPE_Spain_AH60251_TYPE:0.0000009996,V_glaucocephala_LOU18924_Spain_LOU18924:0.0000020383)58:0.0000029307,V_glaucocephala_LAP189_Spain_LAP189:0.0000009996)96:0.0085233024,(((V_hypopithys_KM257372_United_Kingdom_KM257372:0.0025060092,V_hypopithys_HKAS133864_China_Yunnan_HKAS133864:0.0063963717)66:0.0038754975,V_hypopithys_EB01092020_Italy_EB01092020:0.0000020759)38:0.0000024512,V_hypopithys_oka341_Denmark_oka341:0.0047451273)68:0.0146011630)84:0.0156128922,((V_reidii_DK_personal_collection_Denmark_DK_personal_collection:0.0000009996,V_reidii_ARAN_Fungi_01678_Spain_ARAN_Fungi_01678:0.0000009996)52:0.0000009996,V_reidii_UCS_6950_3423_Finland_UCS_6950_3423:0.0024622722)100:0.1176761735)96:0.0244589648,((V_strangulata_TOAV141_Italy_TOAV141:0.0000009996,V_strangulata_AH44413_Spain_AH44413:0.0000009996)100:0.0495625922,((V_surrecta_AJ55_Spain_AJ55:0.0000009996,V_surrecta_SFC081108_Spain_SFC081108:0.0000009996)100:0.0022905114,V_surrecta_GLM_F61563_Germany_GLM_F61563:0.0000021897)100:0.0339326213)99:0.0188650353)98:0.0446110125,(V_terrea_LUG11010_France_LUG11010:0.0020837897,(V_terrea_KM195631_UnitedKingdom_KM195631:0.0000021073,V_terrea_RCA08122022_Italy_RCA08122022:0.0000009996)61:0.0000022050)100:0.0789490107)94:0.0465452676,(((((V_dunensis_RFS07031003_Spain_RFS07031003:0.0000009996,V_dunensis_JAC10587_NewZealand_JAC10587:0.0000009996)61:0.0000009996,V_dunensis_SCM3513_Spain_SCM3513:0.0000009996)99:0.0136088989,V_paludosa_LE313556_TYPE_Russia_LE313556_TYPE:0.0240883132)99:0.0296271909,(V_murinella_OKA_TR2473_Turkey_OKA_TR2473:0.0060205930,V_murinella_AMB19318_Italy_AMB19318:0.0000023001)100:0.0349135631)99:0.0653945711,((V_deceptiva_AMB19290_TYPE_Italy_AMB19290_TYPE:0.0067268809,(V_graminicola_KM68813_Spain_KM68813:0.0000009996,V_graminicola_AH60252_TYPE_Spain_AH60252_TYPE:0.0000009996)100:0.0060697553)100:0.0123583846,(V_pusilla_SFC190908_Spain_SFC190908:0.0021615591,V_pusilla_BRNM817662_CzechRepublic_BRNM817662:0.0000026694)100:0.0370517888)100:0.1229704645)98:0.0849932626)57:0.0194822899)58:0.0147189027,V_latispora_AH49362_TYPE_Spain_AH49362_TYPE:0.2172091440)65:0.0168597779,((((((V_nivea_GDGM25489_TYPE_China_Guangdong_GDGM25489_TYPE:0.0607186823,V_nivea_HKAS77616_China_Guangdong_HKAS77616:0.0000009996)43:0.0000009996,V_nivea_HKAS99697_China_Hainan_HKAS99697:0.0014604707)43:0.0000025196,(V_nivea_HKAS78185_China_Guangdong_HKAS78185:0.0052652132,(V_nivea_HKAS78190_China_Guangdong_HKAS78190:0.0000021045,V_nivea_HKAS79630_China_Guangdong_HKAS79630:0.0026945285)96:0.0023096752)89:0.0014384595)100:0.0640925238,(V_rostricystidiata_MFLU19_1528_TYPE_Thailand_MFLU19_1528_TYPE:0.0000009996,V_rostricystidiata_MFLU19_1531_Thailand_MFLU19_1531:0.0000022979)100:0.0741642644)100:0.1291864412,V_rava_GDGM41955_TYPE_China_Guangdong_GDGM41955_TYPE:0.2653627305)97:0.1232985819,V_turcica_OKA_TR17_TYPE_Turkey_OKA_TR17_TYPE:0.3038682672)71:0.0197154054)83:0.0504586694,(V_sathei_AMH9436_TYPE_India_AMH9436_TYPE:0.1238722037,(V_neovolvacea_SDBR_CMUNK0758_TYPE_Thailand_SDBR_CMUNK0758_TYPE:0.0000009996,V_neovolvacea_SDBR_CMUNK0760_Thailand_SDBR_CMUNK0760:0.0000009996)100:0.0109882283)100:0.2280953441)36:0.0106539385,((((((((((((V_volvacea_G00295827_France_G00295827:0.0000009996,V_volvacea_HKAS123153_SriLanka_HKAS123153:0.0050805248)71:0.0000027415,V_volvacea_ZJ0001GBJ01_China_ZJ0001GBJ01:0.0000009996)67:0.0000009996,V_volvacea_TNSF51910_Japan_TNSF51910:0.0037508675)23:0.0000009996,V_volvacea_HKAS126966_China_Sichuan_HKAS126966:0.0000009996)26:0.0000028547,V_volvacea_JAC12235_NewZealand_JAC12235:0.0000027336)23:0.0000009996,V_volvacea_CBS355_64_India_CBS355_64:0.0000009996)20:0.0000024578,V_volvacea_BKF10217_Thailand_BKF10217:0.0000009996)9:0.0000028455,V_volvacea_SDBR_CMUNK505_Thailand_SDBR_CMUNK505:0.0000009996)100:0.0563619619,(((V_bombycina_AJ244_Spain_AJ244:0.0000009996,((V_bombycina_SDBR_CMUNK0726_Thailand_SDBR_CMUNK0726:0.0020892260,(V_bombycina_HKAS31463_CostaRica_HKAS31463:0.0034033000,V_bombycina_HKAS57909_China_Xizang_HKAS57909:0.0000020306)96:0.0093918939)85:0.0073465078,V_bombycina_ARAN_Fungi_01299_Spain_ARAN_Fungi_01299:0.0016698666)34:0.0000022985)44:0.0000021955,V_bombycina_HKAS105371_China_Jilin_HKAS105371:0.0019757863)65:0.0000022909,V_bombycina_xj2018071604_China_xj2018071604:0.0032262549)100:0.0887922712)96:0.0617512957,(V_orientalis_LE313241_Vietnam_LE313241:0.0000009996,V_orientalis_LEF313654_TYPE_Vietnam:0.0000009996)100:0.0607508012)100:0.1651357294,(((((Vp_earlei_TOAV134_Italy_TOAV134:0.0054661060,Vp_earlei_HKAS133863_China_Yunnan_HKAS133863:0.0088878175)74:0.0062550519,Vp_earlei_MDBar_rettF86_11_Australia_MDBar_rettF86_11:0.0000025365)73:0.0030657606,Vp_earlei_MDBarrettF14_10_Australia_MDBarrettF14_10:0.0000024803)100:0.1022316668,(((Vp_gloiocephalus_HKAS82836_China_Yunnan_HKAS82836:0.0000009996,Vp_gloiocephalus_HKAS71087_China_Yunnan_HKAS71087:0.0017143430)55:0.0000021401,(Vp_gloiocephalus_HKAS127781_China_Yunnan_HKAS127781:0.0000009996,(Vp_gloiocephalus_HKAS133862_China_Shanxi_HKAS133862:0.0018401484,Vp_gloiocephalus_HKAS82935_China_Xizang_HKAS82935:0.0000009996)45:0.0000009996)57:0.0000022417)93:0.0034312602,Vp_gloiocephalus_HKAS90369_China_Xizang_HKAS90369:0.0052481332)100:0.1547423852)98:0.0315879802,((Vp_michiganensis_MICH11761_TYPE_USA_MICH11761_TYPE:0.0000020041,Vp_michiganensis_HMJAUCR106_China_HMJAUCR106:0.0037641982)100:0.0371289085,(Vp_asiaticus_LEF332246_Russia_LEF332246:0.0000027793,Volvopluteus_asiaticus_TNSF15191_TYPE_Japan:0.0037569490)100:0.0668822838)100:0.0576843700)100:0.4425235592)100:0.1488826494,((V_niveosulcata_LE313229_TYPE_Vietnam_LE313229_TYPE:0.4353017571,(V_pulla_LE313325_TYPE_Vietnam_LE313325_TYPE:0.0037223704,(V_pulla_MFLU19_1534_Thailand_MFLU19_1534:0.0000009996,V_pulla_HKAS125711_China_Yunnan_HKAS125711:0.0075627957)99:0.0008247146)99:0.0551442698)100:0.1254888005,(V_bilobata_CUH_AM778_India_CUH_AM778:0.0000009996,V_bilobata_GUBH_19922_TYPE_India_GUBH_19922_TYPE:0.0000024302)100:0.3166245342)97:0.1050873708)100:0.1486670434)84:0.0475941451,V_siquieri_AH602551_TYPE_Spain_AH602551_TYPE:0.1890028031)64:0.0199196636,(((((V_morozovae_LE313322_Vietnam_LE313322:0.0038210034,(V_morozovae_HKAS125659_China_Yunnan_HKAS125659:0.0058604597,V_morozovae_HKAS128675_China_Yunnan_HKAS128675:0.0000020180)77:0.0052555935)74:0.0000022006,V_morozovae_LE313323_TYPE_Vietnam_LE313323_TYPE:0.0000029584)99:0.0118446157,(V_morozovae_HKAS133866_China_Yunnan_HKAS133866:0.0030922154,V_morozovae_HKAS128215_China_Yunnan_HKAS128215:0.0022007668)99:0.0045987236)100:0.0521538547,(((V_rimosa_HKAS133859_China_Yunnan_HKAS133859:0.0020475413,(V_rimosa_HKAS107617_China_Yunnan_HKAS107617:0.0065248785,V_rimosa_HKAS127812_China_Yunnan_HKAS127812:0.0000025267)100:0.0024036233)83:0.0000026433,V_rimosa_HKAS113015_TYPE_China_Yunnan_HKAS113015_TYPE:0.0000009996)95:0.0006804804,V_rimosa_HKAS101180_China_Yunnan_HKAS101180:0.0033152074)97:0.0111708269)97:0.0389331357,(V_sp__ARF4948_USA:0.0077566122,V_sp__JBSD130791_DominicanRepublic:0.0073563419)99:0.0241818448)100:0.1133067954)41:0.0193256565,V_sylvipraticola_AH59938_TYPE_Spain_AH59938_TYPE:0.1087055155)45:0.0185338267,((V_lepiotospora_AJ155_USA_AJ155:0.0192777860,V_lepiotospora_FLASF_61505_USA_FLASF_61505:0.0000029819)100:0.0925224173,((V_pilosa_HKAS133857_China_Yunann_HKAS133857:0.0000025888,V_pilosa_HKAS133858_TYPE_China_Yunnan_HKAS133858_TYPE:0.0000009996)100:0.0145752313,(V_parvirimosa_HKAS83879_TYPE_China_Yunnan_HKAS83879_TYPE:0.0117150231,V_parvirimosa_HKAS101368_China_Yunnan_HKAS101368:0.0021046633)100:0.0172821175)100:0.0936268904)100:0.0894965072)61:0.0272054545,((V_ptilotricha_LE313324_TYPE_Vietnam_LE313324_TYPE:0.0544083761,(V_cordispora_AH60254_TYPE_Spain_AH60254_TYPE:0.0047900112,(V_izmirensis_GUL1027_TYPE_Turkey_GUL1027_TYPE:0.0000009996,V_izmirensis_OKA_TR3536_Turkey_OKA_TR3536:0.0000029865)100:0.0211405204)100:0.0665414088)99:0.0094696059,V_subtaylorii_TNSF74537_Japan_TNSF74537:0.0463461856)100:0.0879464260)100:0.2456908195);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 10000 bootstrap trees
+Log-likelihood of consensus tree: -15895.568871
+Robinson-Foulds distance between ML tree and consensus tree: 20
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--V_variicystidiosa_LAH37570
+|
++--V_variicystidiosa_LAH37568
+|
+|                                                           +--V_caesiotincta_Orton3805_United_Kingdom
+|                                                        +--| (72)
+|                                                        |  |     +--V_caesiotincta_FG0110202213_ltaly_FG0110202213
+|                                                        |  |  +--| (67)
+|                                                        |  |  |  +--V_caesiotincta_OKATR278_Turkey_OKATR278
+|                                                        |  +--| (82)
+|                                                        |     +--V_caesiotincta_BRNM792940_Czech_Republic
+|                                                 +------| (100)
+|                                                 |      +--V_caesiotincta_SFC171118_Spain_SFC171118
+|                                              +--| (76)
+|                                              |  +-----V_mediterranea_AH56333_TYPE_Spain_AH56333_TYPE
+|                                           +--| (48)
+|                                           |  |        +--V_clavocystidiata_LE_313639_TYPE_Russia_LE_313639_TYPE
+|                                           |  +--------| (100)
+|                                           |           +--V_clavocystidiata_GF02082021009_Slovenia_GF02082021009
+|                                        +--| (60)
+|                                        |  |  +------------V_thailandensis_SDBR_CMUNK0957_TYPE_Thailand_SDBR_CMUNK0957_TYPE
+|                                        |  +--| (81)
+|                                        |     |      +--V_pilosipilea_CR3_Spain_CR3
+|                                        |     |   +--| (100)
+|                                        |     |   |  +--V_pilosipilea_AH60256_TYPE_Spain_AH60256_TYPE
+|                                        |     +---| (100)
+|                                        |         +---V_nodosicystis_AH60257_TYPE_Spain_AH60257_TYPE
+|                                     +--| (44)
+|                                     |  |           +--V_taylorii_AJ54_Portugal_AJ54
+|                                     |  |        +--| (100)
+|                                     |  |        |  |  +--V_taylorii_OKATR2478_Turkey_OKATR2478
+|                                     |  |        |  +--| (100)
+|                                     |  |        |     +--V_taylorii_AMB18874_Italy_AMB18874
+|                                     |  |     +--| (99)
+|                                     |  |     |  +-----V_globifera_ARAN_Fungi_09431_TYPE_Spain_ARAN_Fungi_09431_TYPE
+|                                     |  |  +--| (64)
+|                                     |  |  |  |        +--V_murinella_GLM_F43392_Germany_GLM_F43392
+|                                     |  |  |  |     +--| (67)
+|                                     |  |  |  |     |  +--V_neoparvula_GDOR_5558_TYPE_Italy_GDOR_5558_TYPE
+|                                     |  |  |  |  +--| (99)
+|                                     |  |  |  |  |  +--V_murinella_GLM_F42624_Germany_GLM_F42624
+|                                     |  |  |  +--| (71)
+|                                     |  |  |     |  +--V_cryptica_AH60258_TYPE_Spain_AH60258_TYPE
+|                                     |  |  |     +--| (100)
+|                                     |  |  |        +--V_cryptica_SFC190922_Spain_SFC190922
+|                                     |  +--| (35)
+|                                     |     +-------------------V_ranulicystis_AH60253_TYPE_Spain_AH60253_TYPE
+|                                  +--| (58)
+|                                  |  |                    +--V_glaucocephala_AH60251_TYPE_Spain_AH60251_TYPE
+|                                  |  |                 +--| (58)
+|                                  |  |                 |  +--V_glaucocephala_LOU18924_Spain_LOU18924
+|                                  |  |              +--| (96)
+|                                  |  |              |  +--V_glaucocephala_LAP189_Spain_LAP189
+|                                  |  |           +--| (84)
+|                                  |  |           |  |     +--V_hypopithys_KM257372_United_Kingdom_KM257372
+|                                  |  |           |  |  +--| (66)
+|                                  |  |           |  |  |  +--V_hypopithys_HKAS133864_China_Yunnan_HKAS133864
+|                                  |  |           |  +--| (68)
+|                                  |  |           |     |  +--V_hypopithys_EB01092020_Italy_EB01092020
+|                                  |  |           |     +--| (47)
+|                                  |  |           |        +--V_hypopithys_oka341_Denmark_oka341
+|                                  |  |        +--| (96)
+|                                  |  |        |  |       +--V_reidii_DK_personal_collection_Denmark_DK_personal_collection
+|                                  |  |        |  |    +--| (52)
+|                                  |  |        |  |    |  +--V_reidii_ARAN_Fungi_01678_Spain_ARAN_Fungi_01678
+|                                  |  |        |  +----| (100)
+|                                  |  |        |       +--V_reidii_UCS_6950_3423_Finland_UCS_6950_3423
+|                                  |  |     +--| (98)
+|                                  |  |     |  |     +--V_strangulata_TOAV141_Italy_TOAV141
+|                                  |  |     |  |  +--| (100)
+|                                  |  |     |  |  |  +--V_strangulata_AH44413_Spain_AH44413
+|                                  |  |     |  +--| (99)
+|                                  |  |     |     |     +--V_surrecta_AJ55_Spain_AJ55
+|                                  |  |     |     |  +--| (100)
+|                                  |  |     |     |  |  +--V_surrecta_SFC081108_Spain_SFC081108
+|                                  |  |     |     +--| (100)
+|                                  |  |     |        +--V_surrecta_GLM_F61563_Germany_GLM_F61563
+|                                  |  |  +--| (94)
+|                                  |  |  |  |  +--V_terrea_LUG11010_France_LUG11010
+|                                  |  |  |  +--| (100)
+|                                  |  |  |     |  +--V_terrea_KM195631_UnitedKingdom_KM195631
+|                                  |  |  |     +--| (61)
+|                                  |  |  |        +--V_terrea_RCA08122022_Italy_RCA08122022
+|                                  |  +--| (57)
+|                                  |     |              +--V_dunensis_RFS07031003_Spain_RFS07031003
+|                                  |     |           +--| (61)
+|                                  |     |           |  +--V_dunensis_JAC10587_NewZealand_JAC10587
+|                                  |     |        +--| (99)
+|                                  |     |        |  +--V_dunensis_SCM3513_Spain_SCM3513
+|                                  |     |     +--| (99)
+|                                  |     |     |  +--V_paludosa_LE313556_TYPE_Russia_LE313556_TYPE
+|                                  |     |  +--| (99)
+|                                  |     |  |  |  +--V_murinella_OKA_TR2473_Turkey_OKA_TR2473
+|                                  |     |  |  +--| (100)
+|                                  |     |  |     +--V_murinella_AMB19318_Italy_AMB19318
+|                                  |     +--| (98)
+|                                  |        |       +--V_deceptiva_AMB19290_TYPE_Italy_AMB19290_TYPE
+|                                  |        |    +--| (100)
+|                                  |        |    |  |  +--V_graminicola_KM68813_Spain_KM68813
+|                                  |        |    |  +--| (100)
+|                                  |        |    |     +--V_graminicola_AH60252_TYPE_Spain_AH60252_TYPE
+|                                  |        +----| (100)
+|                                  |             |  +--V_pusilla_SFC190908_Spain_SFC190908
+|                                  |             +--| (100)
+|                                  |                +--V_pusilla_BRNM817662_CzechRepublic_BRNM817662
+|                               +--| (65)
+|                               |  +--------V_latispora_AH49362_TYPE_Spain_AH49362_TYPE
+|                            +--| (83)
+|                            |  |                     +--V_nivea_GDGM25489_TYPE_China_Guangdong_GDGM25489_TYPE
+|                            |  |                  +--| (43)
+|                            |  |                  |  +--V_nivea_HKAS77616_China_Guangdong_HKAS77616
+|                            |  |               +--| (43)
+|                            |  |               |  +--V_nivea_HKAS99697_China_Hainan_HKAS99697
+|                            |  |            +--| (100)
+|                            |  |            |  |  +--V_nivea_HKAS78185_China_Guangdong_HKAS78185
+|                            |  |            |  +--| (89)
+|                            |  |            |     |  +--V_nivea_HKAS78190_China_Guangdong_HKAS78190
+|                            |  |            |     +--| (96)
+|                            |  |            |        +--V_nivea_HKAS79630_China_Guangdong_HKAS79630
+|                            |  |       +----| (100)
+|                            |  |       |    |  +--V_rostricystidiata_MFLU19_1528_TYPE_Thailand_MFLU19_1528_TYPE
+|                            |  |       |    +--| (100)
+|                            |  |       |       +--V_rostricystidiata_MFLU19_1531_Thailand_MFLU19_1531
+|                            |  |  +----| (97)
+|                            |  |  |    +-----------V_rava_GDGM41955_TYPE_China_Guangdong_GDGM41955_TYPE
+|                            |  +--| (71)
+|                            |     +------------V_turcica_OKA_TR17_TYPE_Turkey_OKA_TR17_TYPE
+|                         +--| (53)
+|                         |  |                                          +--V_volvacea_G00295827_France_G00295827
+|                         |  |                                       +--| (71)
+|                         |  |                                       |  +--V_volvacea_HKAS123153_SriLanka_HKAS123153
+|                         |  |                                    +--| (67)
+|                         |  |                                    |  +--V_volvacea_ZJ0001GBJ01_China_ZJ0001GBJ01
+|                         |  |                                 +--| (31)
+|                         |  |                                 |  |  +--V_volvacea_BKF10217_Thailand_BKF10217
+|                         |  |                                 |  +--| (35)
+|                         |  |                                 |     +--V_volvacea_HKAS126966_China_Sichuan_HKAS126966
+|                         |  |                              +--| (31)
+|                         |  |                              |  +--V_volvacea_SDBR_CMUNK505_Thailand_SDBR_CMUNK505
+|                         |  |                           +--| (34)
+|                         |  |                           |  +--V_volvacea_JAC12235_NewZealand_JAC12235
+|                         |  |                        +--| (57)
+|                         |  |                        |  +--V_volvacea_CBS355_64_India_CBS355_64
+|                         |  |                     +--| (100)
+|                         |  |                     |  +--V_volvacea_TNSF51910_Japan_TNSF51910
+|                         |  |                  +--| (96)
+|                         |  |                  |  |         +--V_bombycina_AJ244_Spain_AJ244
+|                         |  |                  |  |      +--| (44)
+|                         |  |                  |  |      |  |     +--V_bombycina_SDBR_CMUNK0726_Thailand_SDBR_CMUNK0726
+|                         |  |                  |  |      |  |  +--| (85)
+|                         |  |                  |  |      |  |  |  |  +--V_bombycina_HKAS31463_CostaRica_HKAS31463
+|                         |  |                  |  |      |  |  |  +--| (96)
+|                         |  |                  |  |      |  |  |     +--V_bombycina_HKAS57909_China_Xizang_HKAS57909
+|                         |  |                  |  |      |  +--| (34)
+|                         |  |                  |  |      |     +--V_bombycina_ARAN_Fungi_01299_Spain_ARAN_Fungi_01299
+|                         |  |                  |  |   +--| (65)
+|                         |  |                  |  |   |  +--V_bombycina_HKAS105371_China_Jilin_HKAS105371
+|                         |  |                  |  +---| (100)
+|                         |  |                  |      +--V_bombycina_xj2018071604_China_xj2018071604
+|                         |  |           +------| (100)
+|                         |  |           |      |  +--V_orientalis_LE313241_Vietnam_LE313241
+|                         |  |           |      +--| (100)
+|                         |  |           |         +--V_orientalis_LEF313654_TYPE_Vietnam
+|                         |  |     +-----| (100)
+|                         |  |     |     |                                +--Vp_earlei_TOAV134_Italy_TOAV134
+|                         |  |     |     |                             +--| (74)
+|                         |  |     |     |                             |  +--Vp_earlei_HKAS133863_China_Yunnan_HKAS133863
+|                         |  |     |     |                          +--| (73)
+|                         |  |     |     |                          |  +--Vp_earlei_MDBar_rettF86_11_Australia_MDBar_rettF86_11
+|                         |  |     |     |                      +---| (100)
+|                         |  |     |     |                      |   +--Vp_earlei_MDBarrettF14_10_Australia_MDBarrettF14_10
+|                         |  |     |     |                   +--| (98)
+|                         |  |     |     |                   |  |            +--Vp_gloiocephalus_HKAS82836_China_Yunnan_HKAS82836
+|                         |  |     |     |                   |  |         +--| (55)
+|                         |  |     |     |                   |  |         |  +--Vp_gloiocephalus_HKAS71087_China_Yunnan_HKAS71087
+|                         |  |     |     |                   |  |      +--| (93)
+|                         |  |     |     |                   |  |      |  |     +--Vp_gloiocephalus_HKAS127781_China_Yunnan_HKAS127781
+|                         |  |     |     |                   |  |      |  |  +--| (51)
+|                         |  |     |     |                   |  |      |  |  |  +--Vp_gloiocephalus_HKAS82935_China_Xizang_HKAS82935
+|                         |  |     |     |                   |  |      |  +--| (57)
+|                         |  |     |     |                   |  |      |     +--Vp_gloiocephalus_HKAS133862_China_Shanxi_HKAS133862
+|                         |  |     |     |                   |  +------| (100)
+|                         |  |     |     |                   |         +--Vp_gloiocephalus_HKAS90369_China_Xizang_HKAS90369
+|                         |  |     |     +-------------------| (100)
+|                         |  |     |                         |     +--Vp_michiganensis_MICH11761_TYPE_USA_MICH11761_TYPE
+|                         |  |     |                         |  +--| (100)
+|                         |  |     |                         |  |  +--Vp_michiganensis_HMJAUCR106_China_HMJAUCR106
+|                         |  |     |                         +--| (100)
+|                         |  |     |                            |  +--Vp_asiaticus_LEF332246_Russia_LEF332246
+|                         |  |     |                            +--| (100)
+|                         |  |     |                               +--Volvopluteus_asiaticus_TNSF15191_TYPE_Japan
+|                         |  +-----| (100)
+|                         |        |        +------------------V_niveosulcata_LE313229_TYPE_Vietnam_LE313229_TYPE
+|                         |        |   +----| (100)
+|                         |        |   |    |  +--V_pulla_LE313325_TYPE_Vietnam_LE313325_TYPE
+|                         |        |   |    +--| (99)
+|                         |        |   |       |  +--V_pulla_MFLU19_1534_Thailand_MFLU19_1534
+|                         |        |   |       +--| (99)
+|                         |        |   |          +--V_pulla_HKAS125711_China_Yunnan_HKAS125711
+|                         |        +---| (97)
+|                         |            |             +--V_bilobata_CUH_AM778_India_CUH_AM778
+|                         |            +-------------| (100)
+|                         |                          +--V_bilobata_GUBH_19922_TYPE_India_GUBH_19922_TYPE
+|                      +--| (84)
+|                      |  |         +----V_sathei_AMH9436_TYPE_India_AMH9436_TYPE
+|                      |  +---------| (100)
+|                      |            |  +--V_neovolvacea_SDBR_CMUNK0758_TYPE_Thailand_SDBR_CMUNK0758_TYPE
+|                      |            +--| (100)
+|                      |               +--V_neovolvacea_SDBR_CMUNK0760_Thailand_SDBR_CMUNK0760
+|                   +--| (64)
+|                   |  +-------V_siquieri_AH602551_TYPE_Spain_AH602551_TYPE
+|                +--| (41)
+|                |  |                +--V_morozovae_LE313322_Vietnam_LE313322
+|                |  |             +--| (74)
+|                |  |             |  |  +--V_morozovae_HKAS125659_China_Yunnan_HKAS125659
+|                |  |             |  +--| (77)
+|                |  |             |     +--V_morozovae_HKAS128675_China_Yunnan_HKAS128675
+|                |  |          +--| (99)
+|                |  |          |  +--V_morozovae_LE313323_TYPE_Vietnam_LE313323_TYPE
+|                |  |       +--| (100)
+|                |  |       |  |  +--V_morozovae_HKAS133866_China_Yunnan_HKAS133866
+|                |  |       |  +--| (99)
+|                |  |       |     +--V_morozovae_HKAS128215_China_Yunnan_HKAS128215
+|                |  |    +--| (97)
+|                |  |    |  |        +--V_rimosa_HKAS133859_China_Yunnan_HKAS133859
+|                |  |    |  |     +--| (83)
+|                |  |    |  |     |  |  +--V_rimosa_HKAS107617_China_Yunnan_HKAS107617
+|                |  |    |  |     |  +--| (100)
+|                |  |    |  |     |     +--V_rimosa_HKAS127812_China_Yunnan_HKAS127812
+|                |  |    |  |  +--| (95)
+|                |  |    |  |  |  +--V_rimosa_HKAS113015_TYPE_China_Yunnan_HKAS113015_TYPE
+|                |  |    |  +--| (97)
+|                |  |    |     +--V_rimosa_HKAS101180_China_Yunnan_HKAS101180
+|                |  +----| (100)
+|                |       |  +--V_sp__ARF4948_USA
+|                |       +--| (99)
+|                |          +--V_sp__JBSD130791_DominicanRepublic
+|             +--| (45)
+|             |  +---V_sylvipraticola_AH59938_TYPE_Spain_AH59938_TYPE
+|          +--| (61)
+|          |  |       +--V_lepiotospora_AJ155_USA_AJ155
+|          |  |   +---| (100)
+|          |  |   |   +--V_lepiotospora_FLASF_61505_USA_FLASF_61505
+|          |  +---| (100)
+|          |      |      +--V_pilosa_HKAS133857_China_Yunann_HKAS133857
+|          |      |   +--| (100)
+|          |      |   |  +--V_pilosa_HKAS133858_TYPE_China_Yunnan_HKAS133858_TYPE
+|          |      +---| (100)
+|          |          |  +--V_parvirimosa_HKAS83879_TYPE_China_Yunnan_HKAS83879_TYPE
+|          |          +--| (100)
+|          |             +--V_parvirimosa_HKAS101368_China_Yunnan_HKAS101368
++----------| (100)
+           |     +--V_ptilotricha_LE313324_TYPE_Vietnam_LE313324_TYPE
+           |  +--| (99)
+           |  |  |  +--V_cordispora_AH60254_TYPE_Spain_AH60254_TYPE
+           |  |  +--| (100)
+           |  |     |  +--V_izmirensis_GUL1027_TYPE_Turkey_GUL1027_TYPE
+           |  |     +--| (100)
+           |  |        +--V_izmirensis_OKA_TR3536_Turkey_OKA_TR3536
+           +--| (100)
+              +--V_subtaylorii_TNSF74537_Japan_TNSF74537
+
+
+Consensus tree in newick format: 
+
+(V_variicystidiosa_LAH37570:0.0000024793,V_variicystidiosa_LAH37568:0.0000024793,((((((((((((((((V_caesiotincta_Orton3805_United_Kingdom:0.0000024818,((V_caesiotincta_FG0110202213_ltaly_FG0110202213:0.0000024793,V_caesiotincta_OKATR278_Turkey_OKATR278:0.0238219508)67:0.0000023042,V_caesiotincta_BRNM792940_Czech_Republic:0.0000024793)82:0.0018907178)72:0.0000027492,V_caesiotincta_SFC171118_Spain_SFC171118:0.0000024818)100:0.1575679385,V_mediterranea_AH56333_TYPE_Spain_AH56333_TYPE:0.1499265208)76:0.0295215152,(V_clavocystidiata_LE_313639_TYPE_Russia_LE_313639_TYPE:0.0000024818,V_clavocystidiata_GF02082021009_Slovenia_GF02082021009:0.0000024793)100:0.2018068674)48:0.0101424764,(V_thailandensis_SDBR_CMUNK0957_TYPE_Thailand_SDBR_CMUNK0957_TYPE:0.2930553158,((V_pilosipilea_CR3_Spain_CR3:0.0000024793,V_pilosipilea_AH60256_TYPE_Spain_AH60256_TYPE:0.0000023346)100:0.0454532274,V_nodosicystis_AH60257_TYPE_Spain_AH60257_TYPE:0.1044841698)100:0.1008939671)81:0.0501354792)60:0.0226030351,((((V_taylorii_AJ54_Portugal_AJ54:0.0048616661,(V_taylorii_OKATR2478_Turkey_OKATR2478:0.0000024793,V_taylorii_AMB18874_Italy_AMB18874:0.0000024793)100:0.0044369767)100:0.0622877904,V_globifera_ARAN_Fungi_09431_TYPE_Spain_ARAN_Fungi_09431_TYPE:0.1378082075)99:0.0352523681,(((V_murinella_GLM_F43392_Germany_GLM_F43392:0.0000024793,V_neoparvula_GDOR_5558_TYPE_Italy_GDOR_5558_TYPE:0.0020752581)67:0.0000024793,V_murinella_GLM_F42624_Germany_GLM_F42624:0.0000024793)99:0.0212840237,(V_cryptica_AH60258_TYPE_Spain_AH60258_TYPE:0.0000024793,V_cryptica_SFC190922_Spain_SFC190922:0.0000024793)100:0.0273003188)71:0.0395798553)64:0.0293655571,V_ranulicystis_AH60253_TYPE_Spain_AH60253_TYPE:0.4504803183)35:0.0137996505)44:0.0207743374,(((((((V_glaucocephala_AH60251_TYPE_Spain_AH60251_TYPE:0.0000024793,V_glaucocephala_LOU18924_Spain_LOU18924:0.0000024793)58:0.0000024793,V_glaucocephala_LAP189_Spain_LAP189:0.0000024793)96:0.0085988705,((V_hypopithys_KM257372_United_Kingdom_KM257372:0.0024827922,V_hypopithys_HKAS133864_China_Yunnan_HKAS133864:0.0063348429)66:0.0038636359,(V_hypopithys_EB01092020_Italy_EB01092020:0.0000024793,V_hypopithys_oka341_Denmark_oka341:0.0046785050)47:0.0000021128)68:0.0143489853)84:0.0154581689,((V_reidii_DK_personal_collection_Denmark_DK_personal_collection:0.0000024793,V_reidii_ARAN_Fungi_01678_Spain_ARAN_Fungi_01678:0.0000024793)52:0.0000024793,V_reidii_UCS_6950_3423_Finland_UCS_6950_3423:0.0024393771)100:0.1165523732)96:0.0241581187,((V_strangulata_TOAV141_Italy_TOAV141:0.0000024793,V_strangulata_AH44413_Spain_AH44413:0.0000024793)100:0.0491661607,((V_surrecta_AJ55_Spain_AJ55:0.0000024793,V_surrecta_SFC081108_Spain_SFC081108:0.0000024793)100:0.0022705944,V_surrecta_GLM_F61563_Germany_GLM_F61563:0.0000024793)100:0.0336091957)99:0.0187223304)98:0.0438922495,(V_terrea_LUG11010_France_LUG11010:0.0020669570,(V_terrea_KM195631_UnitedKingdom_KM195631:0.0000024793,V_terrea_RCA08122022_Italy_RCA08122022:0.0000024793)61:0.0000024793)100:0.0784522613)94:0.0490817169,(((((V_dunensis_RFS07031003_Spain_RFS07031003:0.0000024793,V_dunensis_JAC10587_NewZealand_JAC10587:0.0000024793)61:0.0000024793,V_dunensis_SCM3513_Spain_SCM3513:0.0000024793)99:0.0134798412,V_paludosa_LE313556_TYPE_Russia_LE313556_TYPE:0.0238743804)99:0.0294997965,(V_murinella_OKA_TR2473_Turkey_OKA_TR2473:0.0059711977,V_murinella_AMB19318_Italy_AMB19318:0.0000029110)100:0.0344574179)99:0.0635499876,((V_deceptiva_AMB19290_TYPE_Italy_AMB19290_TYPE:0.0067003792,(V_graminicola_KM68813_Spain_KM68813:0.0000024793,V_graminicola_AH60252_TYPE_Spain_AH60252_TYPE:0.0000024793)100:0.0060107482)100:0.0129158101,(V_pusilla_SFC190908_Spain_SFC190908:0.0021464632,V_pusilla_BRNM817662_CzechRepublic_BRNM817662:0.0000024793)100:0.0362091869)100:0.1225375895)98:0.0821012792)57:0.0190781798)58:0.0136614992,V_latispora_AH49362_TYPE_Spain_AH49362_TYPE:0.2165401113)65:0.0164501731,((((((V_nivea_GDGM25489_TYPE_China_Guangdong_GDGM25489_TYPE:0.0603240067,V_nivea_HKAS77616_China_Guangdong_HKAS77616:0.0000024793)43:0.0000021877,V_nivea_HKAS99697_China_Hainan_HKAS99697:0.0014503486)43:0.0000026972,(V_nivea_HKAS78185_China_Guangdong_HKAS78185:0.0052539030,(V_nivea_HKAS78190_China_Guangdong_HKAS78190:0.0000024793,V_nivea_HKAS79630_China_Guangdong_HKAS79630:0.0026673985)96:0.0022840717)89:0.0014289809)100:0.0631257843,(V_rostricystidiata_MFLU19_1528_TYPE_Thailand_MFLU19_1528_TYPE:0.0000024793,V_rostricystidiata_MFLU19_1531_Thailand_MFLU19_1531:0.0000028590)100:0.0741484762)100:0.1288674670,V_rava_GDGM41955_TYPE_China_Guangdong_GDGM41955_TYPE:0.2617769779)97:0.1240278799,V_turcica_OKA_TR17_TYPE_Turkey_OKA_TR17_TYPE:0.3038956711)71:0.0179031934)83:0.0526491283,(((((((((((V_volvacea_G00295827_France_G00295827:0.0000024793,V_volvacea_HKAS123153_SriLanka_HKAS123153:0.0027609704)71:0.0022798400,V_volvacea_ZJ0001GBJ01_China_ZJ0001GBJ01:0.0000024793)67:0.0000024793,(V_volvacea_BKF10217_Thailand_BKF10217:0.0000024793,V_volvacea_HKAS126966_China_Sichuan_HKAS126966:0.0000024793)35:0.0000024793)31:0.0000024793,V_volvacea_SDBR_CMUNK505_Thailand_SDBR_CMUNK505:0.0000024793)31:0.0000024793,V_volvacea_JAC12235_NewZealand_JAC12235:0.0000024793)34:0.0000024793,V_volvacea_CBS355_64_India_CBS355_64:0.0000024793)57:0.0009441051,V_volvacea_TNSF51910_Japan_TNSF51910:0.0026573600)100:0.0557000714,(((V_bombycina_AJ244_Spain_AJ244:0.0000024793,((V_bombycina_SDBR_CMUNK0726_Thailand_SDBR_CMUNK0726:0.0020705974,(V_bombycina_HKAS31463_CostaRica_HKAS31463:0.0033770667,V_bombycina_HKAS57909_China_Xizang_HKAS57909:0.0000028590)96:0.0088675353)85:0.0077528352,V_bombycina_ARAN_Fungi_01299_Spain_ARAN_Fungi_01299:0.0016577280)34:0.0000021167)44:0.0000021167,V_bombycina_HKAS105371_China_Jilin_HKAS105371:0.0019615188)65:0.0000024922,V_bombycina_xj2018071604_China_xj2018071604:0.0032022617)100:0.0873872047)96:0.0614876853,(V_orientalis_LE313241_Vietnam_LE313241:0.0000024793,V_orientalis_LEF313654_TYPE_Vietnam:0.0000021128)100:0.0604355793)100:0.1651922571,(((((Vp_earlei_TOAV134_Italy_TOAV134:0.0054244534,Vp_earlei_HKAS133863_China_Yunnan_HKAS133863:0.0088169108)74:0.0062077909,Vp_earlei_MDBar_rettF86_11_Australia_MDBar_rettF86_11:0.0000024793)73:0.0030424800,Vp_earlei_MDBarrettF14_10_Australia_MDBarrettF14_10:0.0000024793)100:0.1015423389,(((Vp_gloiocephalus_HKAS82836_China_Yunnan_HKAS82836:0.0000024793,Vp_gloiocephalus_HKAS71087_China_Yunnan_HKAS71087:0.0008066441)55:0.0008973066,((Vp_gloiocephalus_HKAS127781_China_Yunnan_HKAS127781:0.0000024793,Vp_gloiocephalus_HKAS82935_China_Xizang_HKAS82935:0.0000024793)51:0.0000024793,Vp_gloiocephalus_HKAS133862_China_Shanxi_HKAS133862:0.0018282841)57:0.0000024793)93:0.0034064713,Vp_gloiocephalus_HKAS90369_China_Xizang_HKAS90369:0.0052189205)100:0.1532196351)98:0.0315645567,((Vp_michiganensis_MICH11761_TYPE_USA_MICH11761_TYPE:0.0000024793,Vp_michiganensis_HMJAUCR106_China_HMJAUCR106:0.0037412863)100:0.0366755924,(Vp_asiaticus_LEF332246_Russia_LEF332246:0.0000026805,Volvopluteus_asiaticus_TNSF15191_TYPE_Japan:0.0037307007)100:0.0665483456)100:0.0568603578)100:0.4382012388)100:0.1471450960,((V_niveosulcata_LE313229_TYPE_Vietnam_LE313229_TYPE:0.4319241174,(V_pulla_LE313325_TYPE_Vietnam_LE313325_TYPE:0.0036853264,(V_pulla_MFLU19_1534_Thailand_MFLU19_1534:0.0000024793,V_pulla_HKAS125711_China_Yunnan_HKAS125711:0.0075103993)99:0.0008288190)99:0.0537200111)100:0.1244467351,(V_bilobata_CUH_AM778_India_CUH_AM778:0.0000024793,V_bilobata_GUBH_19922_TYPE_India_GUBH_19922_TYPE:0.0000021128)100:0.3152241636)97:0.1035956496)100:0.1468220034)53:0.0071327516,(V_sathei_AMH9436_TYPE_India_AMH9436_TYPE:0.1229849791,(V_neovolvacea_SDBR_CMUNK0758_TYPE_Thailand_SDBR_CMUNK0758_TYPE:0.0000024793,V_neovolvacea_SDBR_CMUNK0760_Thailand_SDBR_CMUNK0760:0.0000024793)100:0.0109401075)100:0.2268217248)84:0.0501302250,V_siquieri_AH602551_TYPE_Spain_AH602551_TYPE:0.1910882403)64:0.0176447321,(((((V_morozovae_LE313322_Vietnam_LE313322:0.0037939367,(V_morozovae_HKAS125659_China_Yunnan_HKAS125659:0.0057974711,V_morozovae_HKAS128675_China_Yunnan_HKAS128675:0.0038984155)77:0.0007525197)74:0.0005678910,V_morozovae_LE313323_TYPE_Vietnam_LE313323_TYPE:0.0000024793)99:0.0117566370,(V_morozovae_HKAS133866_China_Yunnan_HKAS133866:0.0030698942,V_morozovae_HKAS128215_China_Yunnan_HKAS128215:0.0021846381)99:0.0045737456)100:0.0517354803,(((V_rimosa_HKAS133859_China_Yunnan_HKAS133859:0.0020327749,(V_rimosa_HKAS107617_China_Yunnan_HKAS107617:0.0064805169,V_rimosa_HKAS127812_China_Yunnan_HKAS127812:0.0000021389)100:0.0023856845)83:0.0000021389,V_rimosa_HKAS113015_TYPE_China_Yunnan_HKAS113015_TYPE:0.0000024818)95:0.0007052051,V_rimosa_HKAS101180_China_Yunnan_HKAS101180:0.0032660119)97:0.0111338289)97:0.0386504678,(V_sp__ARF4948_USA:0.0077219434,V_sp__JBSD130791_DominicanRepublic:0.0072819432)99:0.0240018621)100:0.1126415905)41:0.0187827153,V_sylvipraticola_AH59938_TYPE_Spain_AH59938_TYPE:0.1074908702)45:0.0187125963,((V_lepiotospora_AJ155_USA_AJ155:0.0191207728,V_lepiotospora_FLASF_61505_USA_FLASF_61505:0.0000024793)100:0.0917692459,((V_pilosa_HKAS133857_China_Yunann_HKAS133857:0.0000024793,V_pilosa_HKAS133858_TYPE_China_Yunnan_HKAS133858_TYPE:0.0000024793)100:0.0145272667,(V_parvirimosa_HKAS83879_TYPE_China_Yunnan_HKAS83879_TYPE:0.0116256120,V_parvirimosa_HKAS101368_China_Yunnan_HKAS101368:0.0020880604)100:0.0170840822)100:0.0927035208)100:0.0896620516)61:0.0268993467,((V_ptilotricha_LE313324_TYPE_Vietnam_LE313324_TYPE:0.0540345135,(V_cordispora_AH60254_TYPE_Spain_AH60254_TYPE:0.0047947886,(V_izmirensis_GUL1027_TYPE_Turkey_GUL1027_TYPE:0.0000024793,V_izmirensis_OKA_TR3536_Turkey_OKA_TR3536:0.0000024793)100:0.0209177904)100:0.0657606049)99:0.0095344914,V_subtaylorii_TNSF74537_Japan_TNSF74537:0.0459168488)100:0.0868736111)100:0.2434927767);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t ITS_mafft.fasta.treefile -m "TN{2.32692,3.64256}+F{0.210418,0.289776,0.239673,0.260133}+I{0.189779}+G4{0.901153}" --length 1320
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s ITS_mafft.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s ITS_mafft.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sat Jan 18 14:42:09 2025
+Total CPU time used: 1458.831216 seconds (0h:24m:18s)
+Total wall-clock time used: 403.3822607 seconds (0h:6m:43s)
+

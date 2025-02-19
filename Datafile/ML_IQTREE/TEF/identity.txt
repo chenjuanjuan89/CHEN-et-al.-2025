@@ -1,0 +1,16 @@
+Ident and Sim results
+Results for V_ morozovae_HKAS125 vs V_ rimosa_HKAS113015:
+  Alignment length: 579
+Identical residues: 546
+  Similar residues: 0
+  Percent identity: 94.30
+Percent similarity: 94.30
+
+
+
+Results for V_ pilosa_HKAS133858 vs V_ parvirimosa_HKAS8:
+  Alignment length: 538
+Identical residues: 505
+  Similar residues: 0
+  Percent identity: 93.87
+Percent similarity: 93.87

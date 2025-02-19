@@ -1,0 +1,322 @@
+IQ-TREE 2.3.6 built Dec 11 2024
+
+Partition file name: iqtreepartition.txt
+Input file name: 1.fas
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (10000 replicates)
+Random seed number: 413313
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst. Biol., 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 44 taxa with 3 partitions and 2766 total sites (19.1423% missing data)
+
+  ID	Type	Seq	Site	Unique	Infor	Invar	Const	Name
+   1	DNA	43	1157	780	453	538	538	1ITS_mafft
+   2	DNA	36	947	283	143	713	713	1LSU_mafft
+   3	DNA	22	662	341	227	382	382	1TEF_mafft
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: TIM3e+I+G4:1ITS_mafft,TNe+I+R3:1LSU_mafft,TNe+G4:1TEF_mafft
+
+List of best-fit models per partition:
+
+  ID  Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+   1  TIM3e+I+G4        -8513.792   17039.584 + 2.12e-314   17039.657 + 2.12e-314   17069.906 + 2.12e-314
+   2  TNe+I+R3          -3730.480    7476.960 + 2.12e-314    7477.113 + 2.12e-314    7515.786 + 2.12e-314
+   3  TNe+G4            -3608.082    7224.164 + 2.12e-314    7224.225 + 2.12e-314    7242.145 + 2.12e-314
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Edge-linked-proportional partition model with separate substitution models and separate rates across sites
+
+  ID  Model           Speed  Parameters
+   1  TIM3e+I+G4     1.0176  TIM3e{1.5846,2.26975,4.64585}+FQ+I{0.206242}+G4{1.08955}
+   2  TNe+I+R3       1.0526  TNe{6.25201,15.2902}+FQ+I{0.597725}+R3{0.321143,0.22301,0.0734203,0.881088,0.00771184,111.996}
+   3  TNe+G4         0.8940  TNe{2.43161,9.15443}+FQ+G4{0.317768}
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -15832.7933 (s.e. 310.6512)
+Unconstrained log-likelihood (without tree): -14637.7012
+Number of free parameters (#branches + #model parameters): 102
+Akaike information criterion (AIC) score: 31869.5865
+Corrected Akaike information criterion (AICc) score: 31877.4769
+Bayesian information criterion (BIC) score: 32473.9526
+
+Total tree length (sum of branch lengths): 4.4230
+Sum of internal branch lengths: 2.2597 (51.0898% of tree length)
+
+WARNING: 5 near-zero internal branches (<0.0004) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'V__bombycina_HKAS105371_China_Jilin_HKAS105371' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++--V__bombycina_HKAS105371_China_Jilin_HKAS105371
+|
+|  +--V__bombycina_HKAS31463_Costa_Rica_HKAS31463
++--| (93)
+|  +--V__bombycina_HKAS57909_China_Xizang_HKAS57909
+|
+|                                           +--V__hypopithys_HKAS133864_China_Yunnan_HKAS133864
+|                                        +--| (99)
+|                                        |  +--V__pusilla_TOAV139_Italy_TOAV139
+|                                     +--| (99)
+|                                     |  +----V__strangulata_TOAV141_Italy_TOAV141
+|                                  +--| (69)
+|                                  |  +-------------------V__turcica_OKATR17_TYPE_Turkey_OKATR17_TYPE
+|                               +--| (68)
+|                               |  +-------V__paludosa_LE313556_TYPE_Russia_LE313556_TYPE
+|                            +--| (55)
+|                            |  |           +**V__neovolvacea_SDBR_CMUNK0758_TYPE_Thailand_SDBR_CMUNK0758_TYPE
+|                            |  |  +--------| (100)
+|                            |  |  |        +**V__neovolvacea_SDBR_CMUNK0760_Thailand_SDBR_CMUNK0760
+|                            |  +--| (73)
+|                            |     +---------V__thailandensis_SDBR_CMUNK0957_TYPE_Thailand_SDBR_CMUNK0957_TYPE
+|                         +--| (85)
+|                         |  +---------V_caesiotincta_AMB19319_nan_AMB19319
+|                      +--| (74)
+|                      |  |            +--V__morozovae_HKAS125659_China_Yunnan_HKAS125659
+|                      |  |         +**| (56)
+|                      |  |         |  |     +**V__morozovae_HKAS128675_China_Yunnan_HKAS128675
+|                      |  |         |  |  +--| (95)
+|                      |  |         |  |  |  +--V__morozovae_LE313323_TYPE_Vietnam_LE313323_TYPE
+|                      |  |         |  +--| (88)
+|                      |  |         |     +--V__morozovae_LE313322_Vietnam_LE313322
+|                      |  |      +--| (100)
+|                      |  |      |  |  +--V__morozovae_HKAS128215_China_Yunnan_HKAS128215
+|                      |  |      |  +--| (95)
+|                      |  |      |     +--V__morozovae_HKAS133866_China_Yunnan_HKAS133866
+|                      |  |  +---| (100)
+|                      |  |  |   |     +--V__rimosa_HKAS101180_China_Yunnan_HKAS101180
+|                      |  |  |   |  +--| (93)
+|                      |  |  |   |  |  |        +--V__rimosa_HKAS107617_China_Yunnan_HKAS107617
+|                      |  |  |   |  |  |     +--| (93)
+|                      |  |  |   |  |  |     |  +**V__rimosa_HKAS127812_China_Yunnan_HKAS127812
+|                      |  |  |   |  |  |  +**| (49)
+|                      |  |  |   |  |  |  |  +**V__rimosa_HKAS113015_TYPE_China_Yunnan_HKAS113015_TYPE
+|                      |  |  |   |  |  +**| (20)
+|                      |  |  |   |  |     |  +**V__rimosa_HKAS133859_China_Yunnan_HKAS133859
+|                      |  |  |   |  |     +--| (47)
+|                      |  |  |   |  |        +--V__rimosa_HKAS133860_China_Yunnan_HKAS133860
+|                      |  |  |   +--| (100)
+|                      |  |  |      +--V__rimosa_HKAS127259_China_Yunnan_HKAS127259
+|                      |  +--| (99)
+|                      |     |        +--V__parvirimosa_HKAS83879_TYPE_ChinaYunnan_HKAS83879_TYPE
+|                      |     |  +-----| (100)
+|                      |     |  |     +--V__pilosa_HKAS133858_TYPE_China_Yunnan_HKAS133858_TYPE
+|                      |     +--| (90)
+|                      |        |    +--V__ptilotricha_LE313324_TYPE_Vietnam_LE313324_TYPE
+|                      |        +----| (100)
+|                      |             +--V__subtaylorii_TNSF74537_Japan_TNSF74537
+|                  +---| (99)
+|                  |   |                    +--V__nivea_GDGM25489_TYPE_China_Guangdong_GDGM25489_TYPE
+|                  |   |                 +**| (71)
+|                  |   |                 |  +**V__nivea_HKAS77616_ChinaGuangdong_HKAS77616
+|                  |   |              +--| (96)
+|                  |   |              |  +--V__nivea_HKAS99697_ChinaHainan_HKAS99697
+|                  |   +--------------| (100)
+|                  |                  |  +**V__nivea_HKAS78190_ChinaGuangdong_HKAS78190
+|                  |                  +--| (89)
+|                  |                     +--V__nivea_HKAS79630_ChinaGuangdong_HKAS79630
+|               +--| (92)
+|               |  |        +-----------------V__niveosulcata_LE313229_TYPE_Vietnam_LE313229_TYPE
+|               |  |     +--| (70)
+|               |  |     |  +---------------------------V__guttulosa_LE313326_TYPE_Vietnam_LE313326_TYPE
+|               |  +-----| (96)
+|               |        |   +--V__pulla_HKAS125711_China_Yunnan_HKAS125711
+|               |        +---| (95)
+|               |            +--V__pulla_LE313325_TYPE_Vietnam_LE313325_TYPE
+|      +--------| (100)
+|      |        |                                           +--Vp__gloiocephalus_HKAS127781_China_Yunnan_HKAS127781
+|      |        +-------------------------------------------| (100)
+|      |                                                    +--Vp__gloiocephalus_HKAS133862_China_Shanxi_HKAS133862
+|   +--| (56)
+|   |  +---V__sp__LE313241_Vietnam_LE313241
++---| (100)
+    |      +--V__volvacea_HKAS123153_Sri_Lanka_HKAS123153
+    |   +**| (58)
+    |   |  +--V__volvacea_HKAS126966_China_Sichuan_HKAS126966
+    +---| (100)
+        +--V__volvacea_TNSF51910_Japan_TNSF51910
+
+Tree in newick format:
+
+(V__bombycina_HKAS105371_China_Jilin_HKAS105371:0.0029407778,(V__bombycina_HKAS31463_Costa_Rica_HKAS31463:0.0028720757,V__bombycina_HKAS57909_China_Xizang_HKAS57909:0.0126939448)93:0.0063080139,((((((((((((V__hypopithys_HKAS133864_China_Yunnan_HKAS133864:0.0043746364,V__pusilla_TOAV139_Italy_TOAV139:0.0459528448)99:0.0339186604,V__strangulata_TOAV141_Italy_TOAV141:0.0802703387)99:0.0315560563,V__turcica_OKATR17_TYPE_Turkey_OKATR17_TYPE:0.3195866262)69:0.0191334040,V__paludosa_LE313556_TYPE_Russia_LE313556_TYPE:0.1373309976)68:0.0325686129,((V__neovolvacea_SDBR_CMUNK0758_TYPE_Thailand_SDBR_CMUNK0758_TYPE:0.0000024295,V__neovolvacea_SDBR_CMUNK0760_Thailand_SDBR_CMUNK0760:0.0000025710)100:0.1465781427,V__thailandensis_SDBR_CMUNK0957_TYPE_Thailand_SDBR_CMUNK0957_TYPE:0.1738849924)73:0.0573540147)55:0.0092398148,V_caesiotincta_AMB19319_nan_AMB19319:0.1640300042)85:0.0426590352,((((V__morozovae_HKAS125659_China_Yunnan_HKAS125659:0.0024954359,((V__morozovae_HKAS128675_China_Yunnan_HKAS128675:0.0000021693,V__morozovae_LE313323_TYPE_Vietnam_LE313323_TYPE:0.0014896347)95:0.0043459420,V__morozovae_LE313322_Vietnam_LE313322:0.0018556015)88:0.0034155765)56:0.0000024266,(V__morozovae_HKAS128215_China_Yunnan_HKAS128215:0.0056447613,V__morozovae_HKAS133866_China_Yunnan_HKAS133866:0.0014701212)95:0.0025429212)100:0.0224799671,((V__rimosa_HKAS101180_China_Yunnan_HKAS101180:0.0081171912,(((V__rimosa_HKAS107617_China_Yunnan_HKAS107617:0.0024808354,V__rimosa_HKAS127812_China_Yunnan_HKAS127812:0.0000010012)93:0.0010087957,V__rimosa_HKAS113015_TYPE_China_Yunnan_HKAS113015_TYPE:0.0000010012)49:0.0000010012,(V__rimosa_HKAS133859_China_Yunnan_HKAS133859:0.0000028328,V__rimosa_HKAS133860_China_Yunnan_HKAS133860:0.0091390060)47:0.0009223964)20:0.0000024178)93:0.0039627997,V__rimosa_HKAS127259_China_Yunnan_HKAS127259:0.0025876258)100:0.0316409708)100:0.0685468210,((V__parvirimosa_HKAS83879_TYPE_ChinaYunnan_HKAS83879_TYPE:0.0219596123,V__pilosa_HKAS133858_TYPE_China_Yunnan_HKAS133858_TYPE:0.0230946817)100:0.1097478014,(V__ptilotricha_LE313324_TYPE_Vietnam_LE313324_TYPE:0.0340521932,V__subtaylorii_TNSF74537_Japan_TNSF74537:0.0391901519)100:0.0811497715)90:0.0268027907)99:0.0470760575)74:0.0193017202,(((V__nivea_GDGM25489_TYPE_China_Guangdong_GDGM25489_TYPE:0.0607107980,V__nivea_HKAS77616_ChinaGuangdong_HKAS77616:0.0000021102)71:0.0000023846,V__nivea_HKAS99697_ChinaHainan_HKAS99697:0.0013657216)96:0.0022250851,(V__nivea_HKAS78190_ChinaGuangdong_HKAS78190:0.0000020657,V__nivea_HKAS79630_ChinaGuangdong_HKAS79630:0.0122247142)89:0.0008325953)100:0.2529153863)99:0.0787054323,((V__niveosulcata_LE313229_TYPE_Vietnam_LE313229_TYPE:0.2914241841,V__guttulosa_LE313326_TYPE_Vietnam_LE313326_TYPE:0.4567229008)70:0.0295590146,(V__pulla_HKAS125711_China_Yunnan_HKAS125711:0.0056922038,V__pulla_LE313325_TYPE_Vietnam_LE313325_TYPE:0.0037399044)95:0.0662201346)96:0.0967732990)92:0.0513926353,(Vp__gloiocephalus_HKAS127781_China_Yunnan_HKAS127781:0.0040292164,Vp__gloiocephalus_HKAS133862_China_Shanxi_HKAS133862:0.0023349358)100:0.7158300661)100:0.1461273042,V__sp__LE313241_Vietnam_LE313241:0.0696108630)56:0.0131701781,((V__volvacea_HKAS123153_Sri_Lanka_HKAS123153:0.0091705114,V__volvacea_HKAS126966_China_Sichuan_HKAS126966:0.0007511773)58:0.0000023424,V__volvacea_TNSF51910_Japan_TNSF51910:0.0013986318)100:0.0731790179)100:0.0770675694);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 10000 bootstrap trees
+Log-likelihood of consensus tree: -15832.814838
+Robinson-Foulds distance between ML tree and consensus tree: 2
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--V__bombycina_HKAS105371_China_Jilin_HKAS105371
+|
+|  +--V__bombycina_HKAS31463_Costa_Rica_HKAS31463
++--| (93)
+|  +--V__bombycina_HKAS57909_China_Xizang_HKAS57909
+|
+|                                           +--V__hypopithys_HKAS133864_China_Yunnan_HKAS133864
+|                                        +--| (99)
+|                                        |  +--V__pusilla_TOAV139_Italy_TOAV139
+|                                     +--| (99)
+|                                     |  +----V__strangulata_TOAV141_Italy_TOAV141
+|                                  +--| (69)
+|                                  |  +-------------------V__turcica_OKATR17_TYPE_Turkey_OKATR17_TYPE
+|                               +--| (68)
+|                               |  +-------V__paludosa_LE313556_TYPE_Russia_LE313556_TYPE
+|                            +--| (55)
+|                            |  |           +--V__neovolvacea_SDBR_CMUNK0758_TYPE_Thailand_SDBR_CMUNK0758_TYPE
+|                            |  |  +--------| (100)
+|                            |  |  |        +--V__neovolvacea_SDBR_CMUNK0760_Thailand_SDBR_CMUNK0760
+|                            |  +--| (73)
+|                            |     +---------V__thailandensis_SDBR_CMUNK0957_TYPE_Thailand_SDBR_CMUNK0957_TYPE
+|                         +--| (85)
+|                         |  +---------V_caesiotincta_AMB19319_nan_AMB19319
+|                      +--| (74)
+|                      |  |            +--V__morozovae_HKAS125659_China_Yunnan_HKAS125659
+|                      |  |         +--| (56)
+|                      |  |         |  |     +--V__morozovae_HKAS128675_China_Yunnan_HKAS128675
+|                      |  |         |  |  +--| (95)
+|                      |  |         |  |  |  +--V__morozovae_LE313323_TYPE_Vietnam_LE313323_TYPE
+|                      |  |         |  +--| (88)
+|                      |  |         |     +--V__morozovae_LE313322_Vietnam_LE313322
+|                      |  |      +--| (100)
+|                      |  |      |  |  +--V__morozovae_HKAS128215_China_Yunnan_HKAS128215
+|                      |  |      |  +--| (95)
+|                      |  |      |     +--V__morozovae_HKAS133866_China_Yunnan_HKAS133866
+|                      |  |  +---| (100)
+|                      |  |  |   |        +--V__rimosa_HKAS101180_China_Yunnan_HKAS101180
+|                      |  |  |   |     +--| (24)
+|                      |  |  |   |     |  |  +--V__rimosa_HKAS133859_China_Yunnan_HKAS133859
+|                      |  |  |   |     |  +--| (47)
+|                      |  |  |   |     |     +--V__rimosa_HKAS133860_China_Yunnan_HKAS133860
+|                      |  |  |   |  +--| (93)
+|                      |  |  |   |  |  |     +--V__rimosa_HKAS107617_China_Yunnan_HKAS107617
+|                      |  |  |   |  |  |  +--| (93)
+|                      |  |  |   |  |  |  |  +--V__rimosa_HKAS127812_China_Yunnan_HKAS127812
+|                      |  |  |   |  |  +--| (49)
+|                      |  |  |   |  |     +--V__rimosa_HKAS113015_TYPE_China_Yunnan_HKAS113015_TYPE
+|                      |  |  |   +--| (100)
+|                      |  |  |      +--V__rimosa_HKAS127259_China_Yunnan_HKAS127259
+|                      |  +--| (99)
+|                      |     |        +--V__parvirimosa_HKAS83879_TYPE_ChinaYunnan_HKAS83879_TYPE
+|                      |     |  +-----| (100)
+|                      |     |  |     +--V__pilosa_HKAS133858_TYPE_China_Yunnan_HKAS133858_TYPE
+|                      |     +--| (90)
+|                      |        |    +--V__ptilotricha_LE313324_TYPE_Vietnam_LE313324_TYPE
+|                      |        +----| (100)
+|                      |             +--V__subtaylorii_TNSF74537_Japan_TNSF74537
+|                  +---| (99)
+|                  |   |                    +--V__nivea_GDGM25489_TYPE_China_Guangdong_GDGM25489_TYPE
+|                  |   |                 +--| (71)
+|                  |   |                 |  +--V__nivea_HKAS77616_ChinaGuangdong_HKAS77616
+|                  |   |              +--| (96)
+|                  |   |              |  +--V__nivea_HKAS99697_ChinaHainan_HKAS99697
+|                  |   +--------------| (100)
+|                  |                  |  +--V__nivea_HKAS78190_ChinaGuangdong_HKAS78190
+|                  |                  +--| (89)
+|                  |                     +--V__nivea_HKAS79630_ChinaGuangdong_HKAS79630
+|               +--| (92)
+|               |  |        +-----------------V__niveosulcata_LE313229_TYPE_Vietnam_LE313229_TYPE
+|               |  |     +--| (70)
+|               |  |     |  +---------------------------V__guttulosa_LE313326_TYPE_Vietnam_LE313326_TYPE
+|               |  +-----| (96)
+|               |        |   +--V__pulla_HKAS125711_China_Yunnan_HKAS125711
+|               |        +---| (95)
+|               |            +--V__pulla_LE313325_TYPE_Vietnam_LE313325_TYPE
+|      +--------| (100)
+|      |        |                                           +--Vp__gloiocephalus_HKAS127781_China_Yunnan_HKAS127781
+|      |        +-------------------------------------------| (100)
+|      |                                                    +--Vp__gloiocephalus_HKAS133862_China_Shanxi_HKAS133862
+|   +--| (56)
+|   |  +---V__sp__LE313241_Vietnam_LE313241
++---| (100)
+    |      +--V__volvacea_HKAS123153_Sri_Lanka_HKAS123153
+    |   +--| (58)
+    |   |  +--V__volvacea_HKAS126966_China_Sichuan_HKAS126966
+    +---| (100)
+        +--V__volvacea_TNSF51910_Japan_TNSF51910
+
+
+Consensus tree in newick format: 
+
+(V__bombycina_HKAS105371_China_Jilin_HKAS105371:0.0029410097,(V__bombycina_HKAS31463_Costa_Rica_HKAS31463:0.0028732975,V__bombycina_HKAS57909_China_Xizang_HKAS57909:0.0126924660)93:0.0063112871,((((((((((((V__hypopithys_HKAS133864_China_Yunnan_HKAS133864:0.0043766925,V__pusilla_TOAV139_Italy_TOAV139:0.0459499459)99:0.0339149710,V__strangulata_TOAV141_Italy_TOAV141:0.0802678089)99:0.0315541865,V__turcica_OKATR17_TYPE_Turkey_OKATR17_TYPE:0.3195724342)69:0.0191384304,V__paludosa_LE313556_TYPE_Russia_LE313556_TYPE:0.1373230811)68:0.0325649013,((V__neovolvacea_SDBR_CMUNK0758_TYPE_Thailand_SDBR_CMUNK0758_TYPE:0.0000028570,V__neovolvacea_SDBR_CMUNK0760_Thailand_SDBR_CMUNK0760:0.0000028570)100:0.1465722836,V__thailandensis_SDBR_CMUNK0957_TYPE_Thailand_SDBR_CMUNK0957_TYPE:0.1738748275)73:0.0573539791)55:0.0092418051,V_caesiotincta_AMB19319_nan_AMB19319:0.1640206690)85:0.0426528093,((((V__morozovae_HKAS125659_China_Yunnan_HKAS125659:0.0024945121,((V__morozovae_HKAS128675_China_Yunnan_HKAS128675:0.0000027883,V__morozovae_LE313323_TYPE_Vietnam_LE313323_TYPE:0.0014851950)95:0.0043858289,V__morozovae_LE313322_Vietnam_LE313322:0.0018611222)88:0.0033862058)56:0.0000027777,(V__morozovae_HKAS128215_China_Yunnan_HKAS128215:0.0056441980,V__morozovae_HKAS133866_China_Yunnan_HKAS133866:0.0014693151)95:0.0025428190)100:0.0224763654,(((V__rimosa_HKAS101180_China_Yunnan_HKAS101180:0.0081155784,(V__rimosa_HKAS133859_China_Yunnan_HKAS133859:0.0004733936,V__rimosa_HKAS133860_China_Yunnan_HKAS133860:0.0091418902)47:0.0004247366)24:0.0000020684,((V__rimosa_HKAS107617_China_Yunnan_HKAS107617:0.0024794194,V__rimosa_HKAS127812_China_Yunnan_HKAS127812:0.0000021299)93:0.0010076140,V__rimosa_HKAS113015_TYPE_China_Yunnan_HKAS113015_TYPE:0.0000020606)49:0.0000023116)93:0.0039635438,V__rimosa_HKAS127259_China_Yunnan_HKAS127259:0.0025862108)100:0.0316563797)100:0.0685383784,((V__parvirimosa_HKAS83879_TYPE_ChinaYunnan_HKAS83879_TYPE:0.0219585897,V__pilosa_HKAS133858_TYPE_China_Yunnan_HKAS133858_TYPE:0.0230942533)100:0.1097403679,(V__ptilotricha_LE313324_TYPE_Vietnam_LE313324_TYPE:0.0340526462,V__subtaylorii_TNSF74537_Japan_TNSF74537:0.0391869196)100:0.0811486494)90:0.0268054996)99:0.0470698990)74:0.0193097313,(((V__nivea_GDGM25489_TYPE_China_Guangdong_GDGM25489_TYPE:0.0607090025,V__nivea_HKAS77616_ChinaGuangdong_HKAS77616:0.0000027155)71:0.0000025867,V__nivea_HKAS99697_ChinaHainan_HKAS99697:0.0013648628)96:0.0022239064,(V__nivea_HKAS78190_ChinaGuangdong_HKAS78190:0.0000026361,V__nivea_HKAS79630_ChinaGuangdong_HKAS79630:0.0122240975)89:0.0008327287)100:0.2529000608)99:0.0786856515,((V__niveosulcata_LE313229_TYPE_Vietnam_LE313229_TYPE:0.2913938817,V__guttulosa_LE313326_TYPE_Vietnam_LE313326_TYPE:0.4566866044)70:0.0295867211,(V__pulla_HKAS125711_China_Yunnan_HKAS125711:0.0056920782,V__pulla_LE313325_TYPE_Vietnam_LE313325_TYPE:0.0037387795)95:0.0662176278)96:0.0967596470)92:0.0514893021,(Vp__gloiocephalus_HKAS127781_China_Yunnan_HKAS127781:0.0040627203,Vp__gloiocephalus_HKAS133862_China_Shanxi_HKAS133862:0.0023021345)100:0.7157547448)100:0.1460591868,V__sp__LE313241_Vietnam_LE313241:0.0696210821)56:0.0131618069,((V__volvacea_HKAS123153_Sri_Lanka_HKAS123153:0.0091694839,V__volvacea_HKAS126966_China_Sichuan_HKAS126966:0.0007510255)58:0.0000024033,V__volvacea_TNSF51910_Japan_TNSF51910:0.0013974560)100:0.0731782972)100:0.0770662608);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t iqtreepartition.txt.treefile -p iqtreepartition.txt.best_model.nex
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s 1.fas --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s 1.fas --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sat Jan 18 19:40:25 2025
+Total CPU time used: 184.326002 seconds (0h:3m:4s)
+Total wall-clock time used: 97.62480813 seconds (0h:1m:37s)
+

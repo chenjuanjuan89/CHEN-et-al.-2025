@@ -1,0 +1,526 @@
+IQ-TREE multicore version 2.3.6 for Linux x86 64-bit built Dec 11 2024
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    chenxuan (AVX2, FMA3, 15 GB RAM)
+Command: iqtree2 -s ITS_mafft.fasta -m MFP -T AUTO -B 10000
+Seed:    884530 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sat Jan 18 14:35:25 2025
+Kernel:  AVX+FMA - auto-detect threads (20 CPU cores detected)
+
+Reading alignment file ITS_mafft.fasta ... Fasta format detected
+Reading fasta file: done in 0.00246058 secs using 61.53% CPU
+NOTE: Change sequence name 'V_caesiotincta_Orton3805_United Kingdom  Orton3805' -> V_caesiotincta_Orton3805_United_Kingdom
+NOTE: Change sequence name 'V_volvacea_G00295827_France G00295827' -> V_volvacea_G00295827_France_G00295827
+NOTE: Change sequence name 'V_caesiotincta_FG0110202213_ltaly FG0110202213' -> V_caesiotincta_FG0110202213_ltaly_FG0110202213
+NOTE: Change sequence name 'V_caesiotincta_SFC171118_Spain SFC171118' -> V_caesiotincta_SFC171118_Spain_SFC171118
+NOTE: Change sequence name 'V_caesiotincta_BRNM792940_Czech Republic  BRNM792940' -> V_caesiotincta_BRNM792940_Czech_Republic
+NOTE: Change sequence name 'V_glaucocephala_AH60251_TYPE_Spain AH60251_TYPE' -> V_glaucocephala_AH60251_TYPE_Spain_AH60251_TYPE
+NOTE: Change sequence name 'V_glaucocephala_LAP189_Spain LAP189' -> V_glaucocephala_LAP189_Spain_LAP189
+NOTE: Change sequence name 'V_glaucocephala_LOU18924_Spain LOU18924' -> V_glaucocephala_LOU18924_Spain_LOU18924
+NOTE: Change sequence name 'V_nivea_GDGM25489_TYPE_China_Guangdong GDGM25489_TYPE' -> V_nivea_GDGM25489_TYPE_China_Guangdong_GDGM25489_TYPE
+NOTE: Change sequence name 'V_hypopithys_KM257372_United_Kingdom KM257372' -> V_hypopithys_KM257372_United_Kingdom_KM257372
+NOTE: Change sequence name 'V_hypopithys_EB01092020_Italy EB01092020' -> V_hypopithys_EB01092020_Italy_EB01092020
+NOTE: Change sequence name 'V_strangulata_TOAV141_Italy TOAV141' -> V_strangulata_TOAV141_Italy_TOAV141
+NOTE: Change sequence name 'Vp_earlei_TOAV134_Italy TOAV134' -> Vp_earlei_TOAV134_Italy_TOAV134
+NOTE: Change sequence name 'Vp_michiganensis_MICH11761_TYPE_USA MICH11761_TYPE' -> Vp_michiganensis_MICH11761_TYPE_USA_MICH11761_TYPE
+NOTE: Change sequence name 'V_taylorii_AJ54_Portugal AJ54' -> V_taylorii_AJ54_Portugal_AJ54
+NOTE: Change sequence name 'V_bombycina_AJ244_Spain AJ244' -> V_bombycina_AJ244_Spain_AJ244
+NOTE: Change sequence name 'V_surrecta_AJ55_Spain AJ55' -> V_surrecta_AJ55_Spain_AJ55
+NOTE: Change sequence name 'V_lepiotospora_AJ155_USA AJ155' -> V_lepiotospora_AJ155_USA_AJ155
+NOTE: Change sequence name 'V_dunensis_RFS07031003_Spain RFS07031003' -> V_dunensis_RFS07031003_Spain_RFS07031003
+NOTE: Change sequence name 'V_dunensis_SCM3513_Spain SCM3513' -> V_dunensis_SCM3513_Spain_SCM3513
+NOTE: Change sequence name 'V_terrea_LUG11010_France LUG11010' -> V_terrea_LUG11010_France_LUG11010
+NOTE: Change sequence name 'V_sathei_AMH9436_TYPE_India AMH9436_TYPE' -> V_sathei_AMH9436_TYPE_India_AMH9436_TYPE
+NOTE: Change sequence name 'V_terrea_KM195631_UnitedKingdom KM195631' -> V_terrea_KM195631_UnitedKingdom_KM195631
+NOTE: Change sequence name 'V_rava_GDGM41955_TYPE_China_Guangdong GDGM41955_TYPE' -> V_rava_GDGM41955_TYPE_China_Guangdong_GDGM41955_TYPE
+NOTE: Change sequence name 'V_volvacea_ZJ0001GBJ01_China ZJ0001GBJ01' -> V_volvacea_ZJ0001GBJ01_China_ZJ0001GBJ01
+NOTE: Change sequence name 'V_lepiotospora_FLASF_61505_USA FLASF_61505' -> V_lepiotospora_FLASF_61505_USA_FLASF_61505
+NOTE: Change sequence name 'V_volvacea_CBS355_64_India CBS355_64' -> V_volvacea_CBS355_64_India_CBS355_64
+NOTE: Change sequence name 'V_surrecta_GLM_F61563_Germany GLM_F61563' -> V_surrecta_GLM_F61563_Germany_GLM_F61563
+NOTE: Change sequence name 'V_murinella_GLM_F43392_Germany GLM_F43392' -> V_murinella_GLM_F43392_Germany_GLM_F43392
+NOTE: Change sequence name 'V_murinella_GLM_F42624_Germany GLM_F42624' -> V_murinella_GLM_F42624_Germany_GLM_F42624
+NOTE: Change sequence name 'V_turcica_OKA_TR17_TYPE_Turkey OKA_TR17_TYPE' -> V_turcica_OKA_TR17_TYPE_Turkey_OKA_TR17_TYPE
+NOTE: Change sequence name 'V_reidii_DK_personal_collection_Denmark DK_personal_collection' -> V_reidii_DK_personal_collection_Denmark_DK_personal_collection
+NOTE: Change sequence name 'V_reidii_UCS_6950_3423_Finland UCS_6950_3423' -> V_reidii_UCS_6950_3423_Finland_UCS_6950_3423
+NOTE: Change sequence name 'V_morozovae_LE313322_Vietnam LE313322' -> V_morozovae_LE313322_Vietnam_LE313322
+NOTE: Change sequence name 'V_morozovae_LE313323_TYPE_Vietnam LE313323_TYPE' -> V_morozovae_LE313323_TYPE_Vietnam_LE313323_TYPE
+NOTE: Change sequence name 'V_niveosulcata_LE313229_TYPE_Vietnam LE313229_TYPE' -> V_niveosulcata_LE313229_TYPE_Vietnam_LE313229_TYPE
+NOTE: Change sequence name 'V_orientalis_LE313241_Vietnam LE313241' -> V_orientalis_LE313241_Vietnam_LE313241
+NOTE: Change sequence name 'V_volvacea_BKF10217_Thailand BKF10217' -> V_volvacea_BKF10217_Thailand_BKF10217
+NOTE: Change sequence name 'V_ptilotricha_LE313324_TYPE_Vietnam LE313324_TYPE' -> V_ptilotricha_LE313324_TYPE_Vietnam_LE313324_TYPE
+NOTE: Change sequence name 'V_pulla_LE313325_TYPE_Vietnam LE313325_TYPE' -> V_pulla_LE313325_TYPE_Vietnam_LE313325_TYPE
+NOTE: Change sequence name 'V_dunensis_JAC10587_NewZealand JAC10587' -> V_dunensis_JAC10587_NewZealand_JAC10587
+NOTE: Change sequence name 'V_volvacea_JAC12235_NewZealand JAC12235' -> V_volvacea_JAC12235_NewZealand_JAC12235
+NOTE: Change sequence name 'V_rostricystidiata_MFLU19_1528_TYPE_Thailand MFLU19_1528_TYPE' -> V_rostricystidiata_MFLU19_1528_TYPE_Thailand_MFLU19_1528_TYPE
+NOTE: Change sequence name 'V_rostricystidiata_MFLU19_1531_Thailand MFLU19_1531' -> V_rostricystidiata_MFLU19_1531_Thailand_MFLU19_1531
+NOTE: Change sequence name 'V_pulla_MFLU19_1534_Thailand MFLU19_1534' -> V_pulla_MFLU19_1534_Thailand_MFLU19_1534
+NOTE: Change sequence name 'V_bombycina_xj2018071604_China xj2018071604' -> V_bombycina_xj2018071604_China_xj2018071604
+NOTE: Change sequence name 'Vp_michiganensis_HMJAUCR106_China HMJAUCR106' -> Vp_michiganensis_HMJAUCR106_China_HMJAUCR106
+NOTE: Change sequence name 'V_clavocystidiata_LE_313639_TYPE_Russia LE_313639_TYPE' -> V_clavocystidiata_LE_313639_TYPE_Russia_LE_313639_TYPE
+NOTE: Change sequence name 'V_neovolvacea_SDBR_CMUNK0758_TYPE_Thailand SDBR_CMUNK0758_TYPE' -> V_neovolvacea_SDBR_CMUNK0758_TYPE_Thailand_SDBR_CMUNK0758_TYPE
+NOTE: Change sequence name 'V_neovolvacea_SDBR_CMUNK0760_Thailand SDBR_CMUNK0760' -> V_neovolvacea_SDBR_CMUNK0760_Thailand_SDBR_CMUNK0760
+NOTE: Change sequence name 'V_volvacea_SDBR_CMUNK505_Thailand SDBR_CMUNK505' -> V_volvacea_SDBR_CMUNK505_Thailand_SDBR_CMUNK505
+NOTE: Change sequence name 'V_bombycina_SDBR_CMUNK0726_Thailand SDBR_CMUNK0726' -> V_bombycina_SDBR_CMUNK0726_Thailand_SDBR_CMUNK0726
+NOTE: Change sequence name 'V_thailandensis_SDBR_CMUNK0957_TYPE_Thailand SDBR_CMUNK0957_TYPE' -> V_thailandensis_SDBR_CMUNK0957_TYPE_Thailand_SDBR_CMUNK0957_TYPE
+NOTE: Change sequence name 'V_bilobata_CUH_AM778_India CUH_AM778' -> V_bilobata_CUH_AM778_India_CUH_AM778
+NOTE: Change sequence name 'V_bilobata_GUBH_19922_TYPE_India GUBH_19922_TYPE' -> V_bilobata_GUBH_19922_TYPE_India_GUBH_19922_TYPE
+NOTE: Change sequence name 'V_sp _ARF4948_USA ARF4948' -> V_sp__ARF4948_USA
+NOTE: Change sequence name 'V_hypopithys_oka341_Denmark oka341' -> V_hypopithys_oka341_Denmark_oka341
+NOTE: Change sequence name 'Vp_earlei_MDBarrettF14_10_Australia MDBarrettF14_10' -> Vp_earlei_MDBarrettF14_10_Australia_MDBarrettF14_10
+NOTE: Change sequence name 'Vp_earlei_MDBar_rettF86_11_Australia MDBar_rettF86_11' -> Vp_earlei_MDBar_rettF86_11_Australia_MDBar_rettF86_11
+NOTE: Change sequence name 'Vp_asiaticus_LEF332246_Russia LEF332246' -> Vp_asiaticus_LEF332246_Russia_LEF332246
+NOTE: Change sequence name 'V_latispora_AH49362_TYPE_Spain AH49362_TYPE' -> V_latispora_AH49362_TYPE_Spain_AH49362_TYPE
+NOTE: Change sequence name 'V_deceptiva_AMB19290_TYPE_Italy AMB19290_TYPE' -> V_deceptiva_AMB19290_TYPE_Italy_AMB19290_TYPE
+NOTE: Change sequence name 'V_siquieri_AH602551_TYPE_Spain AH602551_TYPE' -> V_siquieri_AH602551_TYPE_Spain_AH602551_TYPE
+NOTE: Change sequence name 'V_surrecta_SFC081108_Spain SFC081108' -> V_surrecta_SFC081108_Spain_SFC081108
+NOTE: Change sequence name 'V_strangulata_AH44413_Spain AH44413' -> V_strangulata_AH44413_Spain_AH44413
+NOTE: Change sequence name 'V_reidii_ARAN_Fungi_01678_Spain ARAN_Fungi_01678' -> V_reidii_ARAN_Fungi_01678_Spain_ARAN_Fungi_01678
+NOTE: Change sequence name 'V_terrea_RCA08122022_Italy RCA08122022' -> V_terrea_RCA08122022_Italy_RCA08122022
+NOTE: Change sequence name 'V_cordispora_AH60254_TYPE_Spain AH60254_TYPE' -> V_cordispora_AH60254_TYPE_Spain_AH60254_TYPE
+NOTE: Change sequence name 'V_izmirensis_GUL1027_TYPE_Turkey GUL1027_TYPE' -> V_izmirensis_GUL1027_TYPE_Turkey_GUL1027_TYPE
+NOTE: Change sequence name 'V_izmirensis_OKA_TR3536_Turkey OKA_TR3536' -> V_izmirensis_OKA_TR3536_Turkey_OKA_TR3536
+NOTE: Change sequence name 'V_sp _JBSD130791_DominicanRepublic JBSD130791' -> V_sp__JBSD130791_DominicanRepublic
+NOTE: Change sequence name 'V_sylvipraticola_AH59938_TYPE_Spain AH59938_TYPE' -> V_sylvipraticola_AH59938_TYPE_Spain_AH59938_TYPE
+NOTE: Change sequence name 'V_clavocystidiata_GF02082021009_Slovenia GF02082021009' -> V_clavocystidiata_GF02082021009_Slovenia_GF02082021009
+NOTE: Change sequence name 'V_pilosipilea_CR3_Spain CR3' -> V_pilosipilea_CR3_Spain_CR3
+NOTE: Change sequence name 'V_pilosipilea_AH60256_TYPE_Spain AH60256_TYPE' -> V_pilosipilea_AH60256_TYPE_Spain_AH60256_TYPE
+NOTE: Change sequence name 'V_nodosicystis_AH60257_TYPE_Spain AH60257_TYPE' -> V_nodosicystis_AH60257_TYPE_Spain_AH60257_TYPE
+NOTE: Change sequence name 'V_cryptica_AH60258_TYPE_Spain AH60258_TYPE' -> V_cryptica_AH60258_TYPE_Spain_AH60258_TYPE
+NOTE: Change sequence name 'V_cryptica_SFC190922_Spain SFC190922' -> V_cryptica_SFC190922_Spain_SFC190922
+NOTE: Change sequence name 'V_neoparvula_GDOR_5558_TYPE_Italy GDOR_5558_TYPE' -> V_neoparvula_GDOR_5558_TYPE_Italy_GDOR_5558_TYPE
+NOTE: Change sequence name 'V_murinella_OKA_TR2473_Turkey OKA_TR2473' -> V_murinella_OKA_TR2473_Turkey_OKA_TR2473
+NOTE: Change sequence name 'V_graminicola_KM68813_Spain KM68813' -> V_graminicola_KM68813_Spain_KM68813
+NOTE: Change sequence name 'V_graminicola_AH60252_TYPE_Spain AH60252_TYPE' -> V_graminicola_AH60252_TYPE_Spain_AH60252_TYPE
+NOTE: Change sequence name 'V_pusilla_SFC190908_Spain SFC190908' -> V_pusilla_SFC190908_Spain_SFC190908
+NOTE: Change sequence name 'V_pusilla_BRNM817662_CzechRepublic BRNM817662' -> V_pusilla_BRNM817662_CzechRepublic_BRNM817662
+NOTE: Change sequence name 'V_globifera_ARAN_Fungi_09431_TYPE_Spain ARAN_Fungi_09431_TYPE' -> V_globifera_ARAN_Fungi_09431_TYPE_Spain_ARAN_Fungi_09431_TYPE
+NOTE: Change sequence name 'V_taylorii_OKATR2478_Turkey OKATR2478' -> V_taylorii_OKATR2478_Turkey_OKATR2478
+NOTE: Change sequence name 'V_taylorii_AMB18874_Italy AMB18874' -> V_taylorii_AMB18874_Italy_AMB18874
+NOTE: Change sequence name 'V_mediterranea_AH56333_TYPE_Spain AH56333_TYPE' -> V_mediterranea_AH56333_TYPE_Spain_AH56333_TYPE
+NOTE: Change sequence name 'V_caesiotincta_OKATR278_Turkey OKATR278' -> V_caesiotincta_OKATR278_Turkey_OKATR278
+NOTE: Change sequence name 'V_ranulicystis_AH60253_TYPE_Spain AH60253_TYPE' -> V_ranulicystis_AH60253_TYPE_Spain_AH60253_TYPE
+NOTE: Change sequence name 'V_bombycina_ARAN_Fungi_01299_Spain ARAN_Fungi_01299' -> V_bombycina_ARAN_Fungi_01299_Spain_ARAN_Fungi_01299
+NOTE: Change sequence name 'V_murinella_AMB19318_Italy AMB19318' -> V_murinella_AMB19318_Italy_AMB19318
+NOTE: Change sequence name 'V_paludosa_LE313556_TYPE_Russia LE313556_TYPE' -> V_paludosa_LE313556_TYPE_Russia_LE313556_TYPE
+NOTE: Change sequence name 'V_pilosa_HKAS133857_China_Yunann HKAS133857' -> V_pilosa_HKAS133857_China_Yunann_HKAS133857
+NOTE: Change sequence name 'V_pilosa_HKAS133858_TYPE_China_Yunnan HKAS133858_TYPE' -> V_pilosa_HKAS133858_TYPE_China_Yunnan_HKAS133858_TYPE
+NOTE: Change sequence name 'V_rimosa_HKAS133859_China_Yunnan HKAS133859' -> V_rimosa_HKAS133859_China_Yunnan_HKAS133859
+NOTE: Change sequence name 'V_morozovae_HKAS133866_China_Yunnan HKAS133866' -> V_morozovae_HKAS133866_China_Yunnan_HKAS133866
+NOTE: Change sequence name 'V_bombycina_HKAS31463_CostaRica HKAS31463' -> V_bombycina_HKAS31463_CostaRica_HKAS31463
+NOTE: Change sequence name 'Vp_gloiocephalus_HKAS82836_China_Yunnan HKAS82836' -> Vp_gloiocephalus_HKAS82836_China_Yunnan_HKAS82836
+NOTE: Change sequence name 'V_rimosa_HKAS107617_China_Yunnan HKAS107617' -> V_rimosa_HKAS107617_China_Yunnan_HKAS107617
+NOTE: Change sequence name 'V_volvacea_HKAS123153_SriLanka HKAS123153' -> V_volvacea_HKAS123153_SriLanka_HKAS123153
+NOTE: Change sequence name 'V_morozovae_HKAS125659_China_Yunnan HKAS125659' -> V_morozovae_HKAS125659_China_Yunnan_HKAS125659
+NOTE: Change sequence name 'V_volvacea_HKAS126966_China_Sichuan HKAS126966' -> V_volvacea_HKAS126966_China_Sichuan_HKAS126966
+NOTE: Change sequence name 'Vp_gloiocephalus_HKAS127781_China_Yunnan HKAS127781' -> Vp_gloiocephalus_HKAS127781_China_Yunnan_HKAS127781
+NOTE: Change sequence name 'V_morozovae_HKAS128215_China_Yunnan HKAS128215' -> V_morozovae_HKAS128215_China_Yunnan_HKAS128215
+NOTE: Change sequence name 'V_rimosa_HKAS127812_China_Yunnan HKAS127812' -> V_rimosa_HKAS127812_China_Yunnan_HKAS127812
+NOTE: Change sequence name 'Vp_gloiocephalus_HKAS133862_China_Shanxi HKAS133862' -> Vp_gloiocephalus_HKAS133862_China_Shanxi_HKAS133862
+NOTE: Change sequence name 'V_rimosa_HKAS113015_TYPE_China_Yunnan HKAS113015_TYPE' -> V_rimosa_HKAS113015_TYPE_China_Yunnan_HKAS113015_TYPE
+NOTE: Change sequence name 'V_morozovae_HKAS128675_China_Yunnan HKAS128675' -> V_morozovae_HKAS128675_China_Yunnan_HKAS128675
+NOTE: Change sequence name 'V_bombycina_HKAS105371_China_Jilin HKAS105371' -> V_bombycina_HKAS105371_China_Jilin_HKAS105371
+NOTE: Change sequence name 'V_rimosa_HKAS101180_China_Yunnan HKAS101180' -> V_rimosa_HKAS101180_China_Yunnan_HKAS101180
+NOTE: Change sequence name 'Vp_earlei_HKAS133863_China_Yunnan HKAS133863' -> Vp_earlei_HKAS133863_China_Yunnan_HKAS133863
+NOTE: Change sequence name 'V_hypopithys_HKAS133864_China_Yunnan HKAS133864' -> V_hypopithys_HKAS133864_China_Yunnan_HKAS133864
+NOTE: Change sequence name 'V_pulla_HKAS125711_China_Yunnan HKAS125711' -> V_pulla_HKAS125711_China_Yunnan_HKAS125711
+NOTE: Change sequence name 'V_bombycina_HKAS57909_China_Xizang HKAS57909' -> V_bombycina_HKAS57909_China_Xizang_HKAS57909
+NOTE: Change sequence name 'Vp_gloiocephalus_HKAS71087_China_Yunnan HKAS71087' -> Vp_gloiocephalus_HKAS71087_China_Yunnan_HKAS71087
+NOTE: Change sequence name 'V_nivea_HKAS77616_China_Guangdong HKAS77616' -> V_nivea_HKAS77616_China_Guangdong_HKAS77616
+NOTE: Change sequence name 'V_nivea_HKAS78185_China_Guangdong HKAS78185' -> V_nivea_HKAS78185_China_Guangdong_HKAS78185
+NOTE: Change sequence name 'V_nivea_HKAS78190_China_Guangdong HKAS78190' -> V_nivea_HKAS78190_China_Guangdong_HKAS78190
+NOTE: Change sequence name 'V_nivea_HKAS79630_China_Guangdong HKAS79630' -> V_nivea_HKAS79630_China_Guangdong_HKAS79630
+NOTE: Change sequence name 'Vp_gloiocephalus_HKAS82935_China_Xizang HKAS82935' -> Vp_gloiocephalus_HKAS82935_China_Xizang_HKAS82935
+NOTE: Change sequence name 'V_parvirimosa_HKAS83879_TYPE_China_Yunnan HKAS83879_TYPE' -> V_parvirimosa_HKAS83879_TYPE_China_Yunnan_HKAS83879_TYPE
+NOTE: Change sequence name 'Vp_gloiocephalus_HKAS90369_China_Xizang HKAS90369' -> Vp_gloiocephalus_HKAS90369_China_Xizang_HKAS90369
+NOTE: Change sequence name 'V_nivea_HKAS99697_China_Hainan HKAS99697' -> V_nivea_HKAS99697_China_Hainan_HKAS99697
+NOTE: Change sequence name 'V_parvirimosa_HKAS101368_China_Yunnan HKAS101368' -> V_parvirimosa_HKAS101368_China_Yunnan_HKAS101368
+NOTE: Change sequence name 'V_subtaylorii_TNSF74537_Japan TNSF74537' -> V_subtaylorii_TNSF74537_Japan_TNSF74537
+NOTE: Change sequence name 'V_volvacea_TNSF51910_Japan TNSF51910' -> V_volvacea_TNSF51910_Japan_TNSF51910
+NOTE: Change sequence name 'Volvopluteus asiaticus_TNSF15191_TYPE_Japan TNSF15191_TYPE' -> Volvopluteus_asiaticus_TNSF15191_TYPE_Japan
+Alignment most likely contains DNA/RNA sequences
+Alignment has 131 sequences with 1320 columns, 1001 distinct patterns
+596 parsimony-informative, 183 singleton sites, 541 constant sites
+                                                                  Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 5.4443e-05 secs using 8659% CPU
+   1  V_variicystidiosa_LAH37570                                         51.74%    passed     32.32%
+   2  V_variicystidiosa_LAH37568                                         51.67%    passed     29.70%
+   3  V_caesiotincta_Orton3805_United_Kingdom                            82.80%    passed      8.42%
+   4  V_volvacea_G00295827_France_G00295827                              82.58%    passed     17.41%
+   5  V_caesiotincta_FG0110202213_ltaly_FG0110202213                     64.39%    passed     67.67%
+   6  V_caesiotincta_SFC171118_Spain_SFC171118                           53.11%    passed     21.81%
+   7  V_caesiotincta_BRNM792940_Czech_Republic                           71.44%    passed     86.46%
+   8  V_glaucocephala_AH60251_TYPE_Spain_AH60251_TYPE                    58.79%    passed     58.56%
+   9  V_glaucocephala_LAP189_Spain_LAP189                                58.86%    passed     55.85%
+  10  V_glaucocephala_LOU18924_Spain_LOU18924                            58.18%    passed     45.78%
+  11  V_nivea_GDGM25489_TYPE_China_Guangdong_GDGM25489_TYPE              39.55%    failed      0.15%
+  12  V_hypopithys_KM257372_United_Kingdom_KM257372                      55.30%    passed     86.31%
+  13  V_hypopithys_EB01092020_Italy_EB01092020                           58.86%    passed     85.47%
+  14  V_strangulata_TOAV141_Italy_TOAV141                                54.62%    passed     36.20%
+  15  Vp_earlei_TOAV134_Italy_TOAV134                                    53.18%    passed     71.62%
+  16  Vp_michiganensis_MICH11761_TYPE_USA_MICH11761_TYPE                 48.11%    passed     70.17%
+  17  V_taylorii_AJ54_Portugal_AJ54                                      49.55%    passed     14.14%
+  18  V_bombycina_AJ244_Spain_AJ244                                      45.30%    passed     27.29%
+  19  V_surrecta_AJ55_Spain_AJ55                                         51.52%    passed     21.48%
+  20  V_lepiotospora_AJ155_USA_AJ155                                     51.06%    passed     83.95%
+  21  V_dunensis_RFS07031003_Spain_RFS07031003                           53.86%    passed     65.03%
+  22  V_dunensis_SCM3513_Spain_SCM3513                                   51.14%    passed     70.16%
+  23  V_terrea_LUG11010_France_LUG11010                                  53.48%    passed     75.91%
+  24  V_sathei_AMH9436_TYPE_India_AMH9436_TYPE                           59.92%    passed     62.45%
+  25  V_terrea_KM195631_UnitedKingdom_KM195631                           49.70%    passed     73.87%
+  26  V_rava_GDGM41955_TYPE_China_Guangdong_GDGM41955_TYPE               40.30%    passed      7.91%
+  27  V_volvacea_ZJ0001GBJ01_China_ZJ0001GBJ01                           52.05%    failed      1.08%
+  28  V_lepiotospora_FLASF_61505_USA_FLASF_61505                         59.47%    passed     97.71%
+  29  V_volvacea_CBS355_64_India_CBS355_64                               45.15%    failed      4.70%
+  30  V_surrecta_GLM_F61563_Germany_GLM_F61563                           51.29%    passed     16.82%
+  31  V_murinella_GLM_F43392_Germany_GLM_F43392                          50.08%    passed     53.66%
+  32  V_murinella_GLM_F42624_Germany_GLM_F42624                          50.91%    passed     51.79%
+  33  V_turcica_OKA_TR17_TYPE_Turkey_OKA_TR17_TYPE                       49.02%    failed      1.23%
+  34  V_reidii_DK_personal_collection_Denmark_DK_personal_collection     51.74%    failed      0.36%
+  35  V_reidii_UCS_6950_3423_Finland_UCS_6950_3423                       55.00%    failed      1.24%
+  36  V_morozovae_LE313322_Vietnam_LE313322                              67.95%    passed     83.88%
+  37  V_morozovae_LE313323_TYPE_Vietnam_LE313323_TYPE                    54.24%    passed     37.63%
+  38  V_niveosulcata_LE313229_TYPE_Vietnam_LE313229_TYPE                 67.12%    failed      0.00%
+  39  V_orientalis_LE313241_Vietnam_LE313241                             42.58%    passed      5.02%
+  40  V_orientalis_LEF313654_TYPE_Vietnam                                39.09%    failed      3.11%
+  41  V_volvacea_BKF10217_Thailand_BKF10217                              47.50%    failed      3.55%
+  42  V_ptilotricha_LE313324_TYPE_Vietnam_LE313324_TYPE                  51.59%    passed     24.88%
+  43  V_pulla_LE313325_TYPE_Vietnam_LE313325_TYPE                        37.05%    passed     49.17%
+  44  V_dunensis_JAC10587_NewZealand_JAC10587                            49.85%    passed     71.27%
+  45  V_volvacea_JAC12235_NewZealand_JAC12235                            44.62%    failed      4.33%
+  46  V_rostricystidiata_MFLU19_1528_TYPE_Thailand_MFLU19_1528_TYPE      48.03%    passed      7.72%
+  47  V_rostricystidiata_MFLU19_1531_Thailand_MFLU19_1531                44.09%    passed     11.93%
+  48  V_pulla_MFLU19_1534_Thailand_MFLU19_1534                           49.85%    passed     14.04%
+  49  V_bombycina_xj2018071604_China_xj2018071604                        44.77%    passed     25.16%
+  50  Vp_michiganensis_HMJAUCR106_China_HMJAUCR106                       44.92%    passed     48.49%
+  51  V_clavocystidiata_LE_313639_TYPE_Russia_LE_313639_TYPE             54.77%    passed     99.77%
+  52  V_neovolvacea_SDBR_CMUNK0758_TYPE_Thailand_SDBR_CMUNK0758_TYPE     50.23%    passed     73.70%
+  53  V_neovolvacea_SDBR_CMUNK0760_Thailand_SDBR_CMUNK0760               50.45%    passed     69.59%
+  54  V_volvacea_SDBR_CMUNK505_Thailand_SDBR_CMUNK505                    45.30%    failed      3.32%
+  55  V_bombycina_SDBR_CMUNK0726_Thailand_SDBR_CMUNK0726                 61.97%    passed     60.23%
+  56  V_thailandensis_SDBR_CMUNK0957_TYPE_Thailand_SDBR_CMUNK0957_TYPE   47.42%    passed     48.56%
+  57  V_bilobata_CUH_AM778_India_CUH_AM778                               50.68%    passed     34.87%
+  58  V_bilobata_GUBH_19922_TYPE_India_GUBH_19922_TYPE                   47.05%    passed     66.70%
+  59  V_sp__ARF4948_USA                                                  51.44%    passed     59.79%
+  60  V_hypopithys_oka341_Denmark_oka341                                 57.88%    passed     61.47%
+  61  Vp_earlei_MDBarrettF14_10_Australia_MDBarrettF14_10                50.61%    passed     60.50%
+  62  Vp_earlei_MDBar_rettF86_11_Australia_MDBar_rettF86_11              54.02%    passed     88.21%
+  63  Vp_asiaticus_LEF332246_Russia_LEF332246                            41.59%    failed      0.16%
+  64  V_latispora_AH49362_TYPE_Spain_AH49362_TYPE                        50.30%    passed      5.59%
+  65  V_deceptiva_AMB19290_TYPE_Italy_AMB19290_TYPE                      54.70%    passed     50.65%
+  66  V_siquieri_AH602551_TYPE_Spain_AH602551_TYPE                       82.73%    passed     65.18%
+  67  V_surrecta_SFC081108_Spain_SFC081108                               56.74%    passed     21.98%
+  68  V_strangulata_AH44413_Spain_AH44413                                54.62%    passed     37.44%
+  69  V_reidii_ARAN_Fungi_01678_Spain_ARAN_Fungi_01678                   55.91%    failed      0.72%
+  70  V_terrea_RCA08122022_Italy_RCA08122022                             56.74%    passed     36.59%
+  71  V_cordispora_AH60254_TYPE_Spain_AH60254_TYPE                       53.64%    passed     76.95%
+  72  V_izmirensis_GUL1027_TYPE_Turkey_GUL1027_TYPE                      52.50%    passed     69.62%
+  73  V_izmirensis_OKA_TR3536_Turkey_OKA_TR3536                          52.42%    passed     71.89%
+  74  V_sp__JBSD130791_DominicanRepublic                                 53.79%    passed     49.63%
+  75  V_sylvipraticola_AH59938_TYPE_Spain_AH59938_TYPE                   50.08%    passed     93.01%
+  76  V_clavocystidiata_GF02082021009_Slovenia_GF02082021009             55.38%    passed     90.17%
+  77  V_pilosipilea_CR3_Spain_CR3                                        71.21%    passed     49.53%
+  78  V_pilosipilea_AH60256_TYPE_Spain_AH60256_TYPE                      53.71%    passed     52.50%
+  79  V_nodosicystis_AH60257_TYPE_Spain_AH60257_TYPE                     68.71%    passed     80.97%
+  80  V_cryptica_AH60258_TYPE_Spain_AH60258_TYPE                         55.45%    passed     19.17%
+  81  V_cryptica_SFC190922_Spain_SFC190922                               55.45%    passed     19.17%
+  82  V_neoparvula_GDOR_5558_TYPE_Italy_GDOR_5558_TYPE                   52.35%    passed     31.24%
+  83  V_murinella_OKA_TR2473_Turkey_OKA_TR2473                           65.23%    passed     93.81%
+  84  V_graminicola_KM68813_Spain_KM68813                                53.41%    passed     46.80%
+  85  V_graminicola_AH60252_TYPE_Spain_AH60252_TYPE                      53.41%    passed     46.80%
+  86  V_pusilla_SFC190908_Spain_SFC190908                                52.73%    passed     99.34%
+  87  V_pusilla_BRNM817662_CzechRepublic_BRNM817662                      49.55%    passed     94.63%
+  88  V_globifera_ARAN_Fungi_09431_TYPE_Spain_ARAN_Fungi_09431_TYPE      61.59%    passed      8.05%
+  89  V_taylorii_OKATR2478_Turkey_OKATR2478                              56.44%    passed      5.79%
+  90  V_taylorii_AMB18874_Italy_AMB18874                                 69.55%    passed     57.72%
+  91  V_mediterranea_AH56333_TYPE_Spain_AH56333_TYPE                     47.35%    passed     11.46%
+  92  V_caesiotincta_OKATR278_Turkey_OKATR278                            53.48%    passed     36.23%
+  93  V_ranulicystis_AH60253_TYPE_Spain_AH60253_TYPE                     53.94%    passed     35.67%
+  94  V_bombycina_ARAN_Fungi_01299_Spain_ARAN_Fungi_01299                49.55%    passed     14.76%
+  95  V_murinella_AMB19318_Italy_AMB19318                                52.73%    passed     97.99%
+  96  V_paludosa_LE313556_TYPE_Russia_LE313556_TYPE                      51.29%    passed     69.07%
+  97  V_pilosa_HKAS133857_China_Yunann_HKAS133857                        50.83%    passed     58.18%
+  98  V_pilosa_HKAS133858_TYPE_China_Yunnan_HKAS133858_TYPE              51.14%    passed     60.66%
+  99  V_rimosa_HKAS133859_China_Yunnan_HKAS133859                        48.26%    passed     64.67%
+ 100  V_morozovae_HKAS133866_China_Yunnan_HKAS133866                     54.47%    passed     31.65%
+ 101  V_bombycina_HKAS31463_CostaRica_HKAS31463                          47.88%    passed     13.58%
+ 102  Vp_gloiocephalus_HKAS82836_China_Yunnan_HKAS82836                  52.27%    passed      9.25%
+ 103  V_rimosa_HKAS107617_China_Yunnan_HKAS107617                        54.39%    passed     36.60%
+ 104  V_volvacea_HKAS123153_SriLanka_HKAS123153                          50.91%    failed      1.75%
+ 105  V_morozovae_HKAS125659_China_Yunnan_HKAS125659                     67.05%    passed     83.58%
+ 106  V_volvacea_HKAS126966_China_Sichuan_HKAS126966                     46.36%    failed      4.59%
+ 107  Vp_gloiocephalus_HKAS127781_China_Yunnan_HKAS127781                46.89%    passed      9.84%
+ 108  V_morozovae_HKAS128215_China_Yunnan_HKAS128215                     50.61%    passed     76.81%
+ 109  V_rimosa_HKAS127812_China_Yunnan_HKAS127812                        44.77%    passed     34.96%
+ 110  Vp_gloiocephalus_HKAS133862_China_Shanxi_HKAS133862                49.47%    passed     18.01%
+ 111  V_rimosa_HKAS113015_TYPE_China_Yunnan_HKAS113015_TYPE              46.29%    passed     76.71%
+ 112  V_morozovae_HKAS128675_China_Yunnan_HKAS128675                     50.83%    passed     47.02%
+ 113  V_bombycina_HKAS105371_China_Jilin_HKAS105371                      48.48%    passed     69.91%
+ 114  V_rimosa_HKAS101180_China_Yunnan_HKAS101180                        44.77%    passed     80.62%
+ 115  Vp_earlei_HKAS133863_China_Yunnan_HKAS133863                       52.50%    passed     83.14%
+ 116  V_hypopithys_HKAS133864_China_Yunnan_HKAS133864                    52.95%    passed     75.55%
+ 117  V_pulla_HKAS125711_China_Yunnan_HKAS125711                         45.91%    passed     23.89%
+ 118  V_bombycina_HKAS57909_China_Xizang_HKAS57909                       45.68%    passed     29.81%
+ 119  Vp_gloiocephalus_HKAS71087_China_Yunnan_HKAS71087                  44.55%    passed      6.13%
+ 120  V_nivea_HKAS77616_China_Guangdong_HKAS77616                        48.18%    failed      0.04%
+ 121  V_nivea_HKAS78185_China_Guangdong_HKAS78185                        42.73%    failed      0.02%
+ 122  V_nivea_HKAS78190_China_Guangdong_HKAS78190                        44.24%    failed      0.07%
+ 123  V_nivea_HKAS79630_China_Guangdong_HKAS79630                        45.45%    failed      0.02%
+ 124  Vp_gloiocephalus_HKAS82935_China_Xizang_HKAS82935                  47.58%    passed     12.48%
+ 125  V_parvirimosa_HKAS83879_TYPE_China_Yunnan_HKAS83879_TYPE           49.09%    passed     47.93%
+ 126  Vp_gloiocephalus_HKAS90369_China_Xizang_HKAS90369                  47.05%    passed      8.41%
+ 127  V_nivea_HKAS99697_China_Hainan_HKAS99697                           45.98%    failed      0.07%
+ 128  V_parvirimosa_HKAS101368_China_Yunnan_HKAS101368                   49.92%    passed     26.99%
+ 129  V_subtaylorii_TNSF74537_Japan_TNSF74537                            54.47%    passed     56.04%
+ 130  V_volvacea_TNSF51910_Japan_TNSF51910                               43.48%    failed      1.44%
+ 131  Volvopluteus_asiaticus_TNSF15191_TYPE_Japan                        47.65%    failed      1.14%
+WARNING: 82 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                                              52.52%  22 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: V_cryptica_SFC190922_Spain_SFC190922 is identical to V_cryptica_AH60258_TYPE_Spain_AH60258_TYPE but kept for subsequent analysis
+NOTE: V_graminicola_AH60252_TYPE_Spain_AH60252_TYPE is identical to V_graminicola_KM68813_Spain_KM68813 but kept for subsequent analysis
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.014 seconds
+Measuring multi-threading efficiency up to 20 CPU cores
+Increase to 10 rounds for branch lengths
+166 trees examined
+Threads: 1 / Time: 20.109 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -40933
+Threads: 2 / Time: 12.922 sec / Speedup: 1.556 / Efficiency: 78% / LogL: -40933
+Threads: 3 / Time: 10.378 sec / Speedup: 1.938 / Efficiency: 65% / LogL: -40933
+Threads: 4 / Time: 9.261 sec / Speedup: 2.171 / Efficiency: 54% / LogL: -40933
+Threads: 5 / Time: 8.708 sec / Speedup: 2.309 / Efficiency: 46% / LogL: -40933
+BEST NUMBER OF THREADS: 4
+
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -15912.027
+Optimal log-likelihood: -15911.677
+Rate parameters:  A-C: 1.38428  A-G: 2.74598  A-T: 1.24041  C-G: 1.19084  C-T: 4.35025  G-T: 1.00000
+Base frequencies:  A: 0.210  C: 0.290  G: 0.240  T: 0.260
+Proportion of invariable sites: 0.187
+Gamma shape alpha: 0.895
+Parameters optimization took 1 rounds (0.041 sec)
+Time for fast ML tree search: 0.327 seconds
+
+NOTE: ModelFinder requires 81 MB RAM!
+ModelFinder will test up to 484 DNA models (sample size: 1320 epsilon: 0.100) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  GTR+F         17296.163    267 35126.326    35262.364    36510.824
+  2  GTR+F+I       16457.571    268 33451.143    33588.330    34840.827
+  3  GTR+F+G4      15936.396    268 32408.791    32545.979    33798.475
+  4  GTR+F+I+G4    15911.654    269 32361.309    32499.652    33756.178
+  5  GTR+F+R2      16024.200    269 32586.400    32724.743    33981.269
+  6  GTR+F+R3      15924.623    271 32391.246    32531.918    33796.486
+  7  GTR+F+R4      15899.362    273 32344.724    32487.749    33760.335
+  8  GTR+F+R5      15899.390    275 32348.780    32494.182    33774.761
+ 14  GTR+F+I+R2    15964.174    270 32468.349    32607.853    33868.403
+ 15  GTR+F+I+R3    15908.281    272 32360.561    32502.406    33770.986
+ 16  GTR+F+I+R4    15901.732    274 32351.464    32495.674    33772.260
+ 26  SYM+I+G4      15924.756    266 32381.512    32516.407    33760.825
+ 29  SYM+R4        15912.242    270 32364.483    32503.988    33764.538
+ 48  TVM+F+I+G4    15931.293    268 32398.587    32535.774    33788.270
+ 51  TVM+F+R4      15917.910    272 32379.820    32521.666    33790.246
+ 70  TVMe+I+G4     15983.772    265 32497.545    32631.302    33871.672
+ 73  TVMe+R4       15969.406    269 32476.812    32615.155    33871.681
+ 92  TIM3+F+I+G4   15914.882    267 32363.764    32499.802    33748.262
+ 95  TIM3+F+R4     15901.549    271 32345.097    32485.769    33750.337
+114  TIM3e+I+G4    15924.906    264 32377.812    32510.437    33746.754
+117  TIM3e+R4      15912.073    268 32360.145    32497.332    33749.829
+136  TIM2+F+I+G4   15913.296    267 32360.592    32496.630    33745.090
+139  TIM2+F+R4     15900.063    271 32342.127    32482.798    33747.367
+158  TIM2e+I+G4    15929.087    264 32386.174    32518.800    33755.117
+161  TIM2e+R4      15915.701    268 32367.402    32504.589    33757.085
+180  TIM+F+I+G4    15916.430    267 32366.861    32502.899    33751.359
+183  TIM+F+R4      15902.685    271 32347.370    32488.041    33752.610
+202  TIMe+I+G4     15928.918    264 32385.835    32518.461    33754.778
+205  TIMe+R4       15915.436    268 32366.871    32504.059    33756.555
+224  TPM3u+F+I+G4  15934.878    266 32401.757    32536.652    33781.070
+227  TPM3u+F+R4    15920.520    270 32381.040    32520.544    33781.094
+246  TPM3+I+G4     15983.947    263 32493.893    32625.393    33857.650
+249  TPM3+R4       15969.274    267 32472.548    32608.586    33857.046
+268  TPM2u+F+I+G4  15932.895    266 32397.790    32532.685    33777.103
+271  TPM2u+F+R4    15918.784    270 32377.567    32517.072    33777.622
+290  TPM2+I+G4     15987.962    263 32501.923    32633.423    33865.680
+293  TPM2+R4       15972.644    267 32479.289    32615.327    33863.787
+312  K3Pu+F+I+G4   15936.431    266 32404.862    32539.756    33784.175
+315  K3Pu+F+R4     15921.674    270 32383.348    32522.852    33783.402
+334  K3P+I+G4      15987.792    263 32501.583    32633.083    33865.340
+337  K3P+R4        15972.381    267 32478.763    32614.801    33863.261
+356  TN+F+I+G4     15916.445    266 32364.890    32499.785    33744.203
+359  TN+F+R4       15902.569    270 32345.138    32484.642    33745.192
+378  TNe+I+G4      15929.107    263 32384.214    32515.714    33747.971
+381  TNe+R4        15915.569    267 32365.138    32501.176    33749.637
+400  HKY+F+I+G4    15936.481    265 32402.962    32536.719    33777.090
+403  HKY+F+R4      15921.695    269 32381.389    32519.732    33776.258
+422  K2P+I+G4      15988.002    262 32500.003    32630.384    33858.575
+425  K2P+R4        15972.575    266 32477.151    32612.045    33856.464
+444  F81+F+I+G4    16294.797    264 33117.593    33250.219    34486.536
+447  F81+F+R4      16276.689    268 33089.378    33226.566    34479.062
+466  JC+I+G4       16381.776    261 33285.551    33414.818    34638.937
+469  JC+R4         16362.892    265 33255.784    33389.541    34629.912
+Akaike Information Criterion:           TIM2+F+R4
+Corrected Akaike Information Criterion: TIM2+F+R4
+Bayesian Information Criterion:         TN+F+I+G4
+Best-fit model: TN+F+I+G4 chosen according to BIC
+
+All model information printed to ITS_mafft.fasta.model.gz
+CPU time for ModelFinder: 196.447 seconds (0h:3m:16s)
+Wall-clock time for ModelFinder: 71.191 seconds (0h:1m:11s)
+Generating 10000 samples for ultrafast bootstrap (seed: 884530)...
+
+NOTE: 55 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+Thoroughly optimizing +I+G parameters from 10 start values...
+Init pinv, alpha: 0.000, 1.037 / Estimate: 0.000, 0.539 / LogL: -15941.042
+Init pinv, alpha: 0.046, 1.037 / Estimate: 0.186, 0.894 / LogL: -15916.498
+Init pinv, alpha: 0.091, 1.037 / Estimate: 0.185, 0.892 / LogL: -15916.515
+Init pinv, alpha: 0.137, 1.037 / Estimate: 0.184, 0.889 / LogL: -15916.544
+Init pinv, alpha: 0.182, 1.037 / Estimate: 0.187, 0.901 / LogL: -15916.485
+Init pinv, alpha: 0.228, 1.037 / Estimate: 0.198, 0.933 / LogL: -15916.493
+Init pinv, alpha: 0.273, 1.037 / Estimate: 0.198, 0.930 / LogL: -15916.498
+Init pinv, alpha: 0.319, 1.037 / Estimate: 0.200, 0.935 / LogL: -15916.540
+Init pinv, alpha: 0.364, 1.037 / Estimate: 0.198, 0.931 / LogL: -15916.528
+Init pinv, alpha: 0.410, 1.037 / Estimate: 0.199, 0.933 / LogL: -15916.550
+Optimal pinv,alpha: 0.187, 0.901 / LogL: -15916.485
+
+Parameters optimization took 1.671 sec
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 0.0135424 secs using 560.8% CPU
+Computing ML distances took 0.014154 sec (of wall-clock time) 0.076190 sec (of CPU time)
+WARNING: Some pairwise ML distances are too long (saturated)
+Setting up auxiliary I and S matrices: done in 0.00025211 secs using 236.4% CPU
+Computing RapidNJ tree took 0.028013 sec (of wall-clock time) 0.019194 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -16019.346
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 1.083 second
+Computing log-likelihood of 98 initial trees ... 0.671 seconds
+Current best score: -15916.485
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -15916.461
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 3: -15894.040
+BETTER TREE FOUND at iteration 4: -15894.032
+BETTER TREE FOUND at iteration 7: -15894.025
+Iteration 10 / LogL: -15894.028 / Time: 0h:1m:25s
+BETTER TREE FOUND at iteration 19: -15894.019
+Iteration 20 / LogL: -15907.937 / Time: 0h:1m:37s
+Finish initializing candidate tree set (20)
+Current best tree score: -15894.019 / CPU time: 24.192
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 27: -15893.258
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 30: -15893.090
+Iteration 30 / LogL: -15893.090 / Time: 0h:1m:44s (0h:1m:54s left)
+Iteration 40 / LogL: -15893.635 / Time: 0h:1m:51s (0h:1m:32s left)
+Iteration 50 / LogL: -15893.317 / Time: 0h:1m:58s (0h:1m:17s left)
+Log-likelihood cutoff on original alignment: -15936.498
+BETTER TREE FOUND at iteration 58: -15893.086
+Iteration 60 / LogL: -15908.374 / Time: 0h:2m:7s (0h:1m:33s left)
+Iteration 70 / LogL: -15912.706 / Time: 0h:2m:14s (0h:1m:21s left)
+BETTER TREE FOUND at iteration 72: -15893.084
+Iteration 80 / LogL: -15895.361 / Time: 0h:2m:21s (0h:1m:22s left)
+Iteration 90 / LogL: -15966.769 / Time: 0h:2m:29s (0h:1m:11s left)
+BETTER TREE FOUND at iteration 91: -15893.084
+Iteration 100 / LogL: -15894.186 / Time: 0h:2m:37s (0h:1m:19s left)
+Log-likelihood cutoff on original alignment: -15936.498
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.998
+Iteration 110 / LogL: -15899.141 / Time: 0h:2m:45s (0h:1m:18s left)
+Iteration 120 / LogL: -15894.600 / Time: 0h:2m:52s (0h:1m:8s left)
+BETTER TREE FOUND at iteration 121: -15893.082
+Iteration 130 / LogL: -15897.034 / Time: 0h:2m:59s (0h:1m:16s left)
+Iteration 140 / LogL: -15893.241 / Time: 0h:3m:6s (0h:1m:7s left)
+Iteration 150 / LogL: -15894.563 / Time: 0h:3m:13s (0h:0m:58s left)
+Log-likelihood cutoff on original alignment: -15936.498
+Iteration 160 / LogL: -15893.137 / Time: 0h:3m:22s (0h:0m:50s left)
+Iteration 170 / LogL: -15894.209 / Time: 0h:3m:30s (0h:0m:41s left)
+Iteration 180 / LogL: -15897.948 / Time: 0h:3m:38s (0h:0m:33s left)
+Iteration 190 / LogL: -15894.583 / Time: 0h:3m:46s (0h:0m:25s left)
+Iteration 200 / LogL: -15897.664 / Time: 0h:3m:54s (0h:0m:17s left)
+Log-likelihood cutoff on original alignment: -15936.498
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.997
+Iteration 210 / LogL: -15903.152 / Time: 0h:4m:4s (0h:1m:14s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 212: -15892.915
+Iteration 220 / LogL: -15893.689 / Time: 0h:4m:12s (0h:1m:15s left)
+BETTER TREE FOUND at iteration 227: -15892.909
+Iteration 230 / LogL: -15897.824 / Time: 0h:4m:18s (0h:1m:19s left)
+Iteration 240 / LogL: -15893.287 / Time: 0h:4m:26s (0h:1m:11s left)
+Iteration 250 / LogL: -15893.152 / Time: 0h:4m:32s (0h:1m:2s left)
+Log-likelihood cutoff on original alignment: -15936.498
+Iteration 260 / LogL: -15893.431 / Time: 0h:4m:41s (0h:0m:54s left)
+Iteration 270 / LogL: -15893.761 / Time: 0h:4m:48s (0h:0m:46s left)
+Iteration 280 / LogL: -15893.324 / Time: 0h:4m:56s (0h:0m:37s left)
+Iteration 290 / LogL: -15893.255 / Time: 0h:5m:4s (0h:0m:29s left)
+BETTER TREE FOUND at iteration 299: -15892.906
+Iteration 300 / LogL: -15893.905 / Time: 0h:5m:12s (0h:1m:19s left)
+Log-likelihood cutoff on original alignment: -15936.498
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.997
+Iteration 310 / LogL: -15897.602 / Time: 0h:5m:21s (0h:1m:12s left)
+BETTER TREE FOUND at iteration 318: -15892.905
+Iteration 320 / LogL: -15893.208 / Time: 0h:5m:29s (0h:1m:19s left)
+Iteration 330 / LogL: -15893.431 / Time: 0h:5m:36s (0h:1m:11s left)
+Iteration 340 / LogL: -15909.798 / Time: 0h:5m:44s (0h:1m:2s left)
+Iteration 350 / LogL: -15907.605 / Time: 0h:5m:50s (0h:0m:54s left)
+Log-likelihood cutoff on original alignment: -15937.427
+Iteration 360 / LogL: -16151.781 / Time: 0h:5m:59s (0h:0m:46s left)
+Iteration 370 / LogL: -15893.593 / Time: 0h:6m:5s (0h:0m:38s left)
+Iteration 380 / LogL: -15894.020 / Time: 0h:6m:12s (0h:0m:30s left)
+Iteration 390 / LogL: -15969.832 / Time: 0h:6m:19s (0h:0m:22s left)
+Iteration 400 / LogL: -15893.003 / Time: 0h:6m:26s (0h:0m:14s left)
+Log-likelihood cutoff on original alignment: -15937.427
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.995
+Iteration 410 / LogL: -15907.998 / Time: 0h:6m:34s (0h:1m:11s left)
+TREE SEARCH COMPLETED AFTER 419 ITERATIONS / Time: 0h:6m:41s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -15892.905
+Optimal log-likelihood: -15892.904
+Rate parameters:  A-C: 1.00000  A-G: 2.32692  A-T: 1.00000  C-G: 1.00000  C-T: 3.64256  G-T: 1.00000
+Base frequencies:  A: 0.210  C: 0.290  G: 0.240  T: 0.260
+Proportion of invariable sites: 0.190
+Gamma shape alpha: 0.901
+Parameters optimization took 1 rounds (0.020 sec)
+BEST SCORE FOUND : -15892.904
+Creating bootstrap support values...
+Split supports printed to NEXUS file ITS_mafft.fasta.splits.nex
+Total tree length: 9.077
+
+Total number of iterations: 419
+CPU time used for tree search: 1253.222 sec (0h:20m:53s)
+Wall-clock time used for tree search: 328.136 sec (0h:5m:28s)
+Total CPU time used: 1458.831 sec (0h:24m:18s)
+Total wall-clock time used: 403.184 sec (0h:6m:43s)
+
+Computing bootstrap consensus tree...
+Reading input file ITS_mafft.fasta.splits.nex...
+131 taxa and 1241 splits.
+Consensus tree written to ITS_mafft.fasta.contree
+Reading input trees file ITS_mafft.fasta.contree
+Log-likelihood of consensus tree: -15895.569
+
+Analysis results written to: 
+  IQ-TREE report:                ITS_mafft.fasta.iqtree
+  Maximum-likelihood tree:       ITS_mafft.fasta.treefile
+  Likelihood distances:          ITS_mafft.fasta.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          ITS_mafft.fasta.splits.nex
+  Consensus tree:                ITS_mafft.fasta.contree
+  Screen log file:               ITS_mafft.fasta.log
+
+Date and Time: Sat Jan 18 14:42:09 2025

@@ -1,0 +1,39 @@
+***partitionfinder style***
+1ITS_mafft=1-1157;
+1LSU_mafft=1158-2104;
+1TEF_mafft=2105-2766;
+
+***codon style***
+1ITS_mafft=1-1157;
+1LSU_mafft=1158-2104;
+1TEF_mafft=2105-2766;
+
+***bayes style***
+charset 1ITS_mafft=1-1157;
+charset 1LSU_mafft=1158-2104;
+charset 1TEF_mafft=2105-2766;
+partition Names = 3:1ITS_mafft,1LSU_mafft,1TEF_mafft;
+set partition=Names;
+
+***bayes codon style***
+charset 1ITS_mafft=1-1157;
+charset 1LSU_mafft=1158-2104;
+charset 1TEF_mafft=2105-2766;
+partition Names = 3:1ITS_mafft,1LSU_mafft,1TEF_mafft;
+set partition=Names;
+
+***IQ-TREE style***
+#nexus
+begin sets;
+	charset 1ITS_mafft=1-1157;
+	charset 1LSU_mafft=1158-2104;
+	charset 1TEF_mafft=2105-2766;
+end;
+
+***IQ-TREE codon style***
+#nexus
+begin sets;
+	charset 1ITS_mafft=1-1157;
+	charset 1LSU_mafft=1158-2104;
+	charset 1TEF_mafft=2105-2766;
+end;

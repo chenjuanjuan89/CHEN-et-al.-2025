@@ -1,0 +1,10 @@
+#nexus
+begin sets;
+  charset 1ITS_mafft = 1-1157;
+  charset 128S_mafft = 1158-2104;
+  charset 1TEF_mafft = 2105-2766;
+  charpartition mymodels =
+    TIM3e{1.5846,2.26975,4.64585}+FQ+I{0.206242}+G4{1.08955}: 1ITS_mafft{4.03605},
+    TNe{6.25201,15.2902}+FQ+I{0.597725}+R3{0.321143,0.22301,0.0734203,0.881088,0.00771184,111.996}: 1LSU_mafft{4.53742},
+    TNe{2.43161,9.15443}+FQ+G4{0.317768}: 1TEF_mafft{2.49848};
+end;

@@ -1,0 +1,260 @@
+IQ-TREE multicore version 2.3.6 for Linux x86 64-bit built Dec 11 2024
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    chenxuan (AVX2, FMA3, 15 GB RAM)
+Command: iqtree2 -s 1.fas -p iqtreepartition.txt -m MFP -T AUTO -B 10000
+Seed:    413313 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sat Jan 18 19:38:47 2025
+Kernel:  AVX+FMA - auto-detect threads (20 CPU cores detected)
+
+Reading partition model file iqtreepartition.txt ...
+Reading alignment file 1.fas ... Fasta format detected
+Reading fasta file: done in 0.00168569 secs using 55.41% CPU
+Alignment most likely contains DNA/RNA sequences
+WARNING: 2 sites contain only gaps or ambiguous characters.
+Alignment has 44 sequences with 2766 columns, 1395 distinct patterns
+823 parsimony-informative, 310 singleton sites, 1633 constant sites
+                                                                   Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 3.4105e-05 secs using 96.76% CPU
+   1  V__bombycina_HKAS105371_China_Jilin_HKAS105371                      42.52%    passed     28.31%
+   2  V__bombycina_HKAS31463_Costa_Rica_HKAS31463                         53.00%    failed      2.67%
+   3  V__bombycina_HKAS57909_China_Xizang_HKAS57909                       22.34%    passed     84.01%
+   4  V__guttulosa_LE313326_TYPE_Vietnam_LE313326_TYPE                    48.23%    failed      1.67%
+   5  V__hypopithys_HKAS133864_China_Yunnan_HKAS133864                    44.87%    passed     59.58%
+   6  V__morozovae_HKAS125659_China_Yunnan_HKAS125659                     30.59%    passed     85.70%
+   7  V__morozovae_HKAS128215_China_Yunnan_HKAS128215                     23.14%    passed     71.45%
+   8  V__morozovae_HKAS128675_China_Yunnan_HKAS128675                     45.73%    passed     36.38%
+   9  V__morozovae_HKAS133866_China_Yunnan_HKAS133866                     29.36%    passed     50.83%
+  10  V__morozovae_LE313322_Vietnam_LE313322                              68.94%    passed      9.23%
+  11  V__morozovae_LE313323_TYPE_Vietnam_LE313323_TYPE                    62.80%    failed      0.84%
+  12  V__neovolvacea_SDBR_CMUNK0758_TYPE_Thailand_SDBR_CMUNK0758_TYPE     43.42%    passed     17.51%
+  13  V__neovolvacea_SDBR_CMUNK0760_Thailand_SDBR_CMUNK0760               43.53%    passed     15.69%
+  14  V__nivea_GDGM25489_TYPE_China_Guangdong_GDGM25489_TYPE              71.15%    failed      0.00%
+  15  V__nivea_HKAS77616_ChinaGuangdong_HKAS77616                         42.37%    passed      8.64%
+  16  V__nivea_HKAS78190_ChinaGuangdong_HKAS78190                         40.56%    passed      8.92%
+  17  V__nivea_HKAS79630_ChinaGuangdong_HKAS79630                         41.61%    failed      3.42%
+  18  V__nivea_HKAS99697_ChinaHainan_HKAS99697                            74.22%    failed      0.00%
+  19  V__niveosulcata_LE313229_TYPE_Vietnam_LE313229_TYPE                 40.82%    failed      0.00%
+  20  V__paludosa_LE313556_TYPE_Russia_LE313556_TYPE                      48.19%    passed     29.71%
+  21  V__parvirimosa_HKAS83879_TYPE_ChinaYunnan_HKAS83879_TYPE            26.17%    passed     61.63%
+  22  V__pilosa_HKAS133858_TYPE_China_Yunnan_HKAS133858_TYPE              26.61%    passed     75.49%
+  23  V__ptilotricha_LE313324_TYPE_Vietnam_LE313324_TYPE                  63.20%    failed      2.56%
+  24  V__pulla_HKAS125711_China_Yunnan_HKAS125711                         41.36%    passed     29.88%
+  25  V__pulla_LE313325_TYPE_Vietnam_LE313325_TYPE                        38.83%    passed     50.58%
+  26  V__pusilla_TOAV139_Italy_TOAV139                                    70.43%    passed     49.53%
+  27  V__rimosa_HKAS101180_China_Yunnan_HKAS101180                        40.85%    passed     52.82%
+  28  V__rimosa_HKAS107617_China_Yunnan_HKAS107617                        23.97%    passed     75.80%
+  29  V__rimosa_HKAS113015_TYPE_China_Yunnan_HKAS113015_TYPE              20.97%    passed     91.07%
+  30  V__rimosa_HKAS127259_China_Yunnan_HKAS127259                        23.07%    passed     90.66%
+  31  V__rimosa_HKAS127812_China_Yunnan_HKAS127812                        22.45%    passed     61.06%
+  32  V__rimosa_HKAS133859_China_Yunnan_HKAS133859                        54.45%    failed      3.44%
+  33  V__rimosa_HKAS133860_China_Yunnan_HKAS133860                        63.56%    passed     24.29%
+  34  V__sp__LE313241_Vietnam_LE313241                                    41.32%    failed      2.24%
+  35  V__strangulata_TOAV141_Italy_TOAV141                                58.39%    passed     65.45%
+  36  V__subtaylorii_TNSF74537_Japan_TNSF74537                            45.48%    passed     53.09%
+  37  V__thailandensis_SDBR_CMUNK0957_TYPE_Thailand_SDBR_CMUNK0957_TYPE   42.08%    passed     13.05%
+  38  V__turcica_OKATR17_TYPE_Turkey_OKATR17_TYPE                         43.46%    passed      5.05%
+  39  V__volvacea_HKAS123153_Sri_Lanka_HKAS123153                         43.85%    failed      3.67%
+  40  V__volvacea_HKAS126966_China_Sichuan_HKAS126966                     19.63%    passed     48.44%
+  41  V__volvacea_TNSF51910_Japan_TNSF51910                               40.20%    failed      2.50%
+  42  V_caesiotincta_AMB19319_nan_AMB19319                                27.80%    passed     46.68%
+  43  Vp__gloiocephalus_HKAS127781_China_Yunnan_HKAS127781                22.60%    failed      1.16%
+  44  Vp__gloiocephalus_HKAS133862_China_Shanxi_HKAS133862                23.57%    failed      0.80%
+WARNING: 10 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                                               41.86%  14 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: No CharPartition defined, use all CharSets
+
+Loading 3 partitions...
+Subset	Type	Seqs	Sites	Infor	Invar	Model	Name
+1		43	1157	453	538	MFP	1ITS_mafft
+2		36	947	143	713	MFP	1LSU_mafft
+3		22	662	227	382	MFP	1TEF_mafft
+Degree of missing data: 0.191
+Info: multi-threading strategy over partitions
+
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.008 seconds
+Measuring multi-threading efficiency up to 20 CPU cores
+Increase to 10 rounds for branch lengths
+361 trees examined
+Threads: 1 / Time: 20.048 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -24835
+Threads: 2 / Time: 13.363 sec / Speedup: 1.500 / Efficiency: 75% / LogL: -24835
+Threads: 3 / Time: 13.431 sec / Speedup: 1.493 / Efficiency: 50% / LogL: -24835
+BEST NUMBER OF THREADS: 2
+
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Initial log-likelihood: -17066.279
+Current log-likelihood at step 1: -15986.265
+Current log-likelihood at step 2: -15911.557
+Current log-likelihood at step 3: -15909.845
+Parameters optimization took 2 rounds (0.172 sec)
+
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+Initial log-likelihood: -15894.380
+Current log-likelihood at step 1: -15894.090
+Partition-specific rates:  1.478 0.253 1.233
+Parameters optimization took 0 rounds (0.022 sec)
+
+Time for fast ML tree search: 0.287 seconds
+
+NOTE: ModelFinder requires 56 MB RAM!
+Selecting individual models for 3 charsets using BIC...
++I+R4 reinitialized from +I+R3 with factor 0.500
++I+R4 reinitialized from +I+R3 with factor 0.250
++I+R4 reinitialized from +I+R3 with factor 0.125
++I+R4 reinitialized from +I+R3 with factor 0.500
++I+R4 reinitialized from +I+R3 with factor 0.250
++I+R4 reinitialized from +I+R3 with factor 0.125
++I+R4 reinitialized from +I+R3 with factor 0.062
++I+R4 reinitialized from +I+R3 with factor 0.031
++I+R4 reinitialized from +I+R3 with factor 0.500
++I+R4 reinitialized from +I+R3 with factor 0.250
++I+R4 reinitialized from +I+R3 with factor 0.125
++I+R4 reinitialized from +I+R3 with factor 0.500
++I+R4 reinitialized from +I+R3 with factor 0.250
++I+R4 reinitialized from +I+R3 with factor 0.125
++I+R4 reinitialized from +I+R3 with factor 0.062
++I+R3 reinitialized from +I+R2 with factor 0.500
++I+R3 reinitialized from +I+R2 with factor 0.250
+Full partition model BIC score: 32513.074 (LnL: -15852.354  df:102)
+Partition information was printed to iqtreepartition.txt.best_scheme.nex
+Partition information in Raxml format was printed to iqtreepartition.txt.best_scheme
+
+All model information printed to iqtreepartition.txt.model.gz
+CPU time for ModelFinder: 96.781 seconds (0h:1m:36s)
+Wall-clock time for ModelFinder: 52.165 seconds (0h:0m:52s)
+Generating 10000 samples for ultrafast bootstrap (seed: 413313)...
+
+NOTE: 60 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -16439.955
+Current log-likelihood at step 1: -15952.292
+Current log-likelihood at step 2: -15937.157
+Current log-likelihood at step 3: -15933.974
+Current log-likelihood at step 4: -15932.729
+Current log-likelihood at step 5: -15931.835
+Current log-likelihood at step 6: -15931.010
+Current log-likelihood at step 7: -15930.196
+Current log-likelihood at step 8: -15929.387
+Current log-likelihood at step 9: -15928.578
+Current log-likelihood at step 10: -15927.767
+Current log-likelihood at step 11: -15926.953
+Current log-likelihood at step 12: -15926.136
+Current log-likelihood at step 13: -15925.314
+Current log-likelihood at step 14: -15924.488
+Current log-likelihood at step 15: -15923.658
+Current log-likelihood at step 16: -15922.823
+Current log-likelihood at step 17: -15921.983
+Current log-likelihood at step 18: -15921.139
+Current log-likelihood at step 19: -15920.292
+Current log-likelihood at step 20: -15882.795
+Current log-likelihood at step 21: -15842.273
+Current log-likelihood at step 22: -15841.939
+Current log-likelihood at step 23: -15841.910
+Partition-specific rates:  1.017 1.057 0.889
+Parameters optimization took 22 rounds (0.443 sec)
+
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 6.2343e-05 secs using 1.147e+04% CPU
+Computing ML distances took 0.000350 sec (of wall-clock time) 0.007252 sec (of CPU time)
+WARNING: Some pairwise ML distances are too long (saturated)
+Setting up auxiliary I and S matrices: done in 9.3037e-05 secs using 170.9% CPU
+Computing RapidNJ tree took 0.003374 sec (of wall-clock time) 0.003382 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -22214.413
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.333 second
+Computing log-likelihood of 98 initial trees ... 0.499 seconds
+Current best score: -15841.910
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -15841.208
+Current log-likelihood at step 1: -15841.170
+Parameters optimization took 0 rounds (0.016 sec)
+
+BETTER TREE FOUND at iteration 1: -15841.170
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -15832.979
+Current log-likelihood at step 1: -15832.832
+Current log-likelihood at step 2: -15832.822
+Parameters optimization took 1 rounds (0.033 sec)
+
+BETTER TREE FOUND at iteration 2: -15832.822
+BETTER TREE FOUND at iteration 5: -15832.820
+Iteration 10 / LogL: -15841.299 / Time: 0h:0m:59s
+Iteration 20 / LogL: -15832.821 / Time: 0h:1m:5s
+Finish initializing candidate tree set (10)
+Current best tree score: -15832.820 / CPU time: 12.202
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+UPDATE BEST LOG-LIKELIHOOD: -15832.819
+UPDATE BEST LOG-LIKELIHOOD: -15832.817
+Iteration 30 / LogL: -15832.822 / Time: 0h:1m:9s (0h:0m:43s left)
+UPDATE BEST LOG-LIKELIHOOD: -15832.817
+Iteration 40 / LogL: -15832.817 / Time: 0h:1m:12s (0h:0m:33s left)
+Iteration 50 / LogL: -15832.825 / Time: 0h:1m:15s (0h:0m:26s left)
+Log-likelihood cutoff on original alignment: -15867.628
+UPDATE BEST LOG-LIKELIHOOD: -15832.814
+Iteration 60 / LogL: -15838.536 / Time: 0h:1m:20s (0h:0m:21s left)
+Iteration 70 / LogL: -15832.824 / Time: 0h:1m:23s (0h:0m:15s left)
+UPDATE BEST LOG-LIKELIHOOD: -15832.811
+UPDATE BEST LOG-LIKELIHOOD: -15832.803
+Iteration 80 / LogL: -15833.035 / Time: 0h:1m:27s (0h:0m:11s left)
+UPDATE BEST LOG-LIKELIHOOD: -15832.799
+Iteration 90 / LogL: -15863.685 / Time: 0h:1m:31s (0h:0m:6s left)
+Iteration 100 / LogL: -15832.824 / Time: 0h:1m:34s (0h:0m:2s left)
+Log-likelihood cutoff on original alignment: -15867.071
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.992
+TREE SEARCH COMPLETED AFTER 106 ITERATIONS / Time: 0h:1m:36s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+Initial log-likelihood: -15832.799
+Current log-likelihood at step 1: -15832.793
+Partition-specific rates:  1.018 1.053 0.894
+Parameters optimization took 0 rounds (0.015 sec)
+
+Partition information was printed to iqtreepartition.txt.best_model.nex
+BEST SCORE FOUND : -15832.793
+Creating bootstrap support values...
+Split supports printed to NEXUS file iqtreepartition.txt.splits.nex
+Total tree length: 4.423
+
+Total number of iterations: 106
+CPU time used for tree search: 85.704 sec (0h:1m:25s)
+Wall-clock time used for tree search: 43.950 sec (0h:0m:43s)
+Total CPU time used: 184.326 sec (0h:3m:4s)
+Total wall-clock time used: 97.532 sec (0h:1m:37s)
+
+Computing bootstrap consensus tree...
+Reading input file iqtreepartition.txt.splits.nex...
+44 taxa and 289 splits.
+Consensus tree written to iqtreepartition.txt.contree
+Reading input trees file iqtreepartition.txt.contree
+Log-likelihood of consensus tree: -15832.815
+
+Analysis results written to: 
+  IQ-TREE report:                iqtreepartition.txt.iqtree
+  Maximum-likelihood tree:       iqtreepartition.txt.treefile
+  Likelihood distances:          iqtreepartition.txt.mldist
+  Best partitioning scheme:      iqtreepartition.txt.best_scheme.nex
+           in RAxML format:      iqtreepartition.txt.best_scheme
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          iqtreepartition.txt.splits.nex
+  Consensus tree:                iqtreepartition.txt.contree
+  Screen log file:               iqtreepartition.txt.log
+
+Date and Time: Sat Jan 18 19:40:25 2025

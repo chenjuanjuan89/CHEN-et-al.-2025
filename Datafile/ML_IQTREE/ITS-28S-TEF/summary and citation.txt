@@ -1,0 +1,8 @@
+If you use PhyloSuite v1.2.3, please cite:
+1. Zhang, D., F. Gao, I. Jakovlić, H. Zou, J. Zhang, W.X. Li, and G.T. Wang, PhyloSuite: An integrated and scalable desktop platform for streamlined molecular sequence data management and evolutionary phylogenetics studies. Molecular Ecology Resources, 2020. 20(1): p. 348–355. DOI: 10.1111/1755-0998.13096.
+2. Xiang, Chuan‐Yu, Fangluan Gao, Ivan Jakovlić, Hong‐Peng Lei, Ye Hu, Hong Zhang, Hong Zou, Gui‐Tang Wang, and Dong Zhang, Using PhyloSuite for molecular phylogeny and tree‐based analyses. iMeta, 2023. e87. DOI: https://doi.org/10.1002/imt2.87.
+
+Start at: 2025-01-18 17:45:05.377849
+Finish at: 2025-01-18 17:45:06.186675
+Total time used: 0:00:00.808826
+
